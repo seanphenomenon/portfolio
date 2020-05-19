@@ -10,6 +10,19 @@ body {
 color: white;
 }
 
+#profile-photo {
+border: 2px solid #fff;
+box-shadow: inset 0 1.5px 3px 0 rgba(0,0,0,.15), 0 1.5px 3px 0 rgba(0,0,0,.15);
+margin: -38px auto 12px;
+background-color: #fff;
+width: 152px;
+height: 152px;
+box-sizing: border-box;
+background-clip: content-box;
+/* border: 1px solid transparent; */
+border-radius: 49.9%;
+}
+
 #firstName {
 text-transform: uppercase;
  font-size: 70px;
@@ -49,7 +62,7 @@ color: #8854d0;
 #linked-in {
 font-size:30px;
 margin-right: 20px;
-background: #596275;
+background: #495057;
 color: white;
 padding: 15px;
 border-radius: 50%;
@@ -57,7 +70,7 @@ border-radius: 50%;
 
 #git-hub {
     font-size: 30px;
-    background:#596275;
+    background:#495057;
     color: white; 
     padding: 15px;
     border-radius: 50%;

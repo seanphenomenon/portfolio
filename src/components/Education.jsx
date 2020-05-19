@@ -39,6 +39,7 @@ export default class Education extends React.Component {
                             </div>
                         </div>
                 </section>
+                <hr/>
             </div>
 
         );
