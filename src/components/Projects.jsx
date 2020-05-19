@@ -4,9 +4,11 @@ export default class Projects extends React.Component {
     render() {
         return (
             <div>
-                <section className='p-5 align-items-center' id="education">
+                <section className='p-5 align-items-center mb-5' id="projects">
                     <div className='w-100'>
                 <h2>Projects</h2>
+                <h5>Movie Finder App </h5>
+                <p>A simple movie finder application built with Javascript, React, Redux, and the OMDb API.</p>
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner mx-auto">
                         <div className="carousel-item active">

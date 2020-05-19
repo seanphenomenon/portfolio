@@ -12,13 +12,13 @@ export default class Skills extends React.Component{
                                 <div className="mb-3 subheading">Programming Languages & Tools</div>
                                 <div className="dev-icons mb-2">
                                 <i className="fab fa-html5" id='html-icon'></i>
-                                <i class="fab fa-css3-alt" id='css-icon'></i>
-                                <i class="fab fa-js" id='js-icon'></i>
-                                <i class="fab fa-react" id='react-icon'></i>
-                                <i class="fab fa-node" id='node-icon'></i>
-                                <i class="fab fa-git" id='git-icon'></i>
-                                <i class="fab fa-npm" id='npm-icon'></i>
-                                <i class="fab fa-slack" id='slack-icon'></i>
+                                <i className="fab fa-css3-alt" id='css-icon'></i>
+                                <i className="fab fa-js" id='js-icon'></i>
+                                <i className="fab fa-react" id='react-icon'></i>
+                                <i className="fab fa-node" id='node-icon'></i>
+                                <i className="fab fa-git" id='git-icon'></i>
+                                <i className="fab fa-npm" id='npm-icon'></i>
+                                <i className="fab fa-slack" id='slack-icon'></i>
                             
                         </div>
                                 <p>• MongoDB<br/>
@@ -31,7 +31,7 @@ export default class Skills extends React.Component{
                             </div>
                         </div>
                     </div>
-                    </section>
+                 </section>
                     <hr/>
                 </div>
         );

@@ -1,9 +1,13 @@
+html {
+scroll-behavior: smooth;
+}
+
 body {
  position: relative;
 }
 
-#links{
-    color: white;
+#links {
+color: white;
 }
 
 #firstName {
@@ -35,6 +39,7 @@ color: #8854d0;
 }
 #date {
     color: #8854d0;
+    min-width: none;
 
 }
 .social-icons {
@@ -105,6 +110,9 @@ color:#596275;
 padding: 5px;
 border-radius: 50%;
 }
+#date {
+min-width:18rem;
+}
 
 #js-icon {
     font-size:45px;
@@ -174,6 +182,23 @@ border-radius: 50%;
   width:500px;
   height:360px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 code {

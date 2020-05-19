@@ -7,8 +7,8 @@ export default class Experience extends React.Component {
             <div>
                 <section className='p-5 align-items-center' id="experience">
                 <div className='w-100'>
-                    <h2 className='p-2 mb-5'>Experience</h2>
-                    <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <h2 className='p-2 mb-3'>Experience</h2>
+                    <div className="d-flex flex-column flex-md-row justify-content-center mb-5">
                         <div className="p-2">
                             <h4 className="mb-0">Public Information Clerk</h4>
                             <div className="mb-3 subheading">City of San Diego - Development Services</div>
@@ -19,13 +19,13 @@ export default class Experience extends React.Component {
                                 • Processed and distributed plans to respective development discipline departments<br />
                             </p>
                         </div>
-                        <div className="text-sm-right mb-5" id='date'>
+                        <div className=" date text-md-right ml-3" id='date'>
                             <span className="date">August 2018 - Present</span>
                         </div>
                     </div>
 
                      
-                    <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div className="d-flex flex-column flex-md-row justify-content-center mb-5">
                     <div className='p-2'>
                         <h4 className="mb-0">Senior Secretary</h4>
                         <div className="mb-3 subheading">San Diego Community College District</div>
@@ -38,7 +38,7 @@ export default class Experience extends React.Component {
 • Monitored budgets, purchases, and expenditures through PeopleSoft and Excel<br/>
                         </p>
                     </div>
-                    <div className=" text-sm-right mb-5" id='date'>
+                    <div className=" date text-md-right ml-3" id='date'>
                         <span className="date">August 2017 - August 2018</span>
                     </div>
                 </div>
