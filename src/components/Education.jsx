@@ -10,8 +10,8 @@ export default class Education extends React.Component {
                         <div className="resume-item d-flex flex-column flex-md-row justify-content-center mb-5">
                             <div className="p-2">
                                 <h4 className="mb-0">San Diego Code School</h4>
-                                <div className="mb-3 subheading">Full-Stack Web Development Program</div>
-                                <p className='justify-content-left'>• Learned full-stack JavaScript development best practices with React.js, HTML/CSS, Node.js,
+                                <div className="mb-3 subheading"> Completed Full-Stack Web Development Program</div>
+                                <p className='justify-content-left' id='education-info'>• Learned full-stack JavaScript development best practices with React.js, HTML/CSS, Node.js,
                                     MongoDB, and MySQL<br/>
                                     • Participated in group projects where mob programming and/or pair programming were utilized<br/>
                                     • Implemented Git for version control in both group and individual projects<br/>
@@ -25,21 +25,21 @@ export default class Education extends React.Component {
                     </div>
                         <div className="resume-item d-flex flex-column flex-md-row justify-content-center mb-5">
                             <div className="p-2">
-                                <h4 className="mb-0">San Diego State University</h4>
+                                <h4>San Diego State University</h4>
                                 <div className="mb-3 subheading">Bachelor of Science - Business (Marketing) </div>
-                                <p>• Obtained skills and knowledge centered on general business practices and logistics, and integrated
+                                <p id='education-info'>• Obtained skills and knowledge centered on general business practices and logistics, and integrated
                                      marketing communications<br/>
                                    • Developed an understanding that adheres to user experience, promotions, and digital marketing for
                                      products and services<br/>
                                    • Proficient in Google Analytics and Hootsuite <br/>
                                 </p>
                             </div>
-                            <div className=" date text-sm-right ml-3" id='date'>
-                                <span>November 2019 - May 2020</span>
+                            <div className=" date text-md-right ml-3" id='date'>
+                                <span>September 2012 - December 2015</span>
                             </div>
                         </div>
                 </section>
-                <hr/>
+                <hr className='m-0'/>
             </div>
 
         );

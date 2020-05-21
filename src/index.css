@@ -1,16 +1,59 @@
 html {
 scroll-behavior: smooth;
+scroll-margin-bottom: 0;
 }
 
 body {
  position: relative;
 }
 
+.navbar-brand {
+font-size: 30px;
+font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+font-size: 60px;
+text-transform: uppercase;
+font-weight: bold;
+font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+h4 {
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+
+p {
+font-family: 'Quicksand', sans-serif;
+color: #596275;
+line-height:1.5;
+ }
+
+.subheading {
+font-family: 'Saira Extra Condensed', sans-serif;
+text-transform: uppercase;
+font-size: 20px;
+color: #868e96;
+}
+
+#quote {
+    font-size: 28px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Saira Extra Condensed', sans-serif;
+
+    font-weight: 10;
+
+
+}
 #links {
 color: white;
 }
 
-#profile-photo {
+/* #profile-photo {
 border: 2px solid #fff;
 box-shadow: inset 0 1.5px 3px 0 rgba(0,0,0,.15), 0 1.5px 3px 0 rgba(0,0,0,.15);
 margin: -38px auto 12px;
@@ -19,9 +62,9 @@ width: 152px;
 height: 152px;
 box-sizing: border-box;
 background-clip: content-box;
-/* border: 1px solid transparent; */
+border: 1px solid transparent;
 border-radius: 49.9%;
-}
+} */
 
 #firstName {
 text-transform: uppercase;
@@ -41,7 +84,7 @@ text-transform: uppercase;
 
 #address {
 text-transform: uppercase;
-font-size: 20px;
+font-size: 30px;
 font-family: 'Saira Extra Condensed', sans-serif;
 line-height:1.5;
 color: #868e96;
@@ -49,17 +92,50 @@ color: #868e96;
 
 #email {
 color: #8854d0;
+line-height: 1.5rem;
+
 }
+
+#about-me {
+    font-size: 20px;
+}
+
+#experience-info{
+    font-size: 20px;
+}
+
+#skill-list {
+font-size: 20px;
+}
+
+#interest-info {
+font-size: 20px;
+}
+
+#contact-info {
+font-size: 20px;
+}
+
+#education-info {
+font-size: 20px;
+}
+
+#project-info{
+font-size: 20px;
+}
+
 #date {
-    color: #8854d0;
-    min-width: none;
+color: #8854d0;
+min-width: none;
+font-size: 20px;
 
 }
+
 .social-icons {
-    width: 200px;
+width: 200px;
 }
 
-#linked-in {
+#linked-in-icon {
 font-size:30px;
 margin-right: 20px;
 background: #495057;
@@ -68,44 +144,49 @@ padding: 15px;
 border-radius: 50%;
 }
 
-#git-hub {
-    font-size: 30px;
-    background:#495057;
-    color: white; 
-    padding: 15px;
-    border-radius: 50%;
+#linked-in-icon:hover {
+background-color: #8854d0;
+;
 }
 
-h2 {
-font-size: 60px;
-text-transform: uppercase;
-font-weight: bold;
-font-family: 'Saira Extra Condensed', sans-serif;
-}
-
-h4 {
-
+#github-icon {
 font-size: 30px;
-font-weight: bold;
-text-transform: uppercase;
-font-family: 'Saira Extra Condensed', sans-serif;
-
+background:#495057;
+color: white; 
+padding: 15px;
+border-radius: 50%;
 }
 
-p {
+
+#github-icon:hover {
+background-color:#8854d0;
+}
+
+#live-page {
 font-family: 'Quicksand', sans-serif;
-color: #596275;
-line-height:1.5;
-
- }
-
-.subheading {
-font-family: 'Saira Extra Condensed', sans-serif;
-text-transform: uppercase;
-font-size: 20px;
-color: #868e96;
+color: black;
+font-weight: bold;
+cursor: hand;
+font-size: 18px;
+text-decoration: none;
+}
+#live-page:hover {
+color:#8854d0;
 }
 
+#github-page {
+font-family: 'Quicksand', sans-serif;
+color: black;
+font-weight: bold;
+cursor: hand;
+font-size: 18px;
+text-decoration: none;
+}
+
+#github-page:hover{
+color:#8854d0;
+}
+ 
 #html-icon {
 font-size:45px;
 margin-right: 20px;
@@ -123,12 +204,14 @@ color:#596275;
 padding: 5px;
 border-radius: 50%;
 }
+
 #date {
 min-width:18rem;
+flex-shrink: 0;
 }
 
 #js-icon {
-    font-size:45px;
+font-size:45px;
 margin-right: 20px;
 background: white;
 color:#596275;
@@ -145,14 +228,6 @@ padding: 5px;
 border-radius: 50%;
 }
 
-#bootstrap-icon {
-font-size:50px;
-margin-right: 20px;
-background:#596275;
-color:white;
-padding: 5px;
-border-radius: 50%;
-}
 
 #node-icon {
 font-size:45px;
@@ -191,24 +266,31 @@ padding: 5px;
 border-radius: 50%;
 }
 
+
 .carousel {
-  width:500px;
-  height:360px;
+width:500px;
+height:360px;
 }
 
+.carousel-item {
+height: 280px;
 
+}
 
+.carousel-item img {
+position: absolute;
+object-fit:cover;
+top: 0;
+left: 0;
+min-height: 280px;
+}
 
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 
 
 
@@ -217,4 +299,6 @@ border-radius: 50%;
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+      word-wrap: break-word;
+
 }

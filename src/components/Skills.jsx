@@ -4,13 +4,13 @@ export default class Skills extends React.Component{
     render(){
         return(
             <div>
-                <section className='p-5 align-items-center' id="skills">
+                <section className='p-5 align-items-center'id="skills">
                     <div className='w-100'>
-                        <h2 className='p-2 mb-5'>Skills</h2>
-                        <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <h2 className='p-2 mb-5 mt-3'>Skills</h2>
+                        <div className=" d-flex flex-column flex-md-row justify-content-center">
                             <div className="p-2">
                                 <div className="mb-3 subheading">Programming Languages & Tools</div>
-                                <div className="dev-icons mb-2">
+                                <div className="dev-icons mb-5">
                                 <i className="fab fa-html5" id='html-icon'></i>
                                 <i className="fab fa-css3-alt" id='css-icon'></i>
                                 <i className="fab fa-js" id='js-icon'></i>
@@ -21,13 +21,30 @@ export default class Skills extends React.Component{
                                 <i className="fab fa-slack" id='slack-icon'></i>
                             
                         </div>
-                                <p>• MongoDB<br/>
+                                <div className='row mb-2'>
+                                
+                                <div className='col-md-6 mb-2'>
+                                <h4>Soft Skills</h4>
+                                <p  className='text-align-right'id='skill-list'>
+                                    • Creative Thinker<br/>
+                                    • Independent, but collaborative<br/>
+                                    • Quick Learner<br/>
+                                    • Excellent Time management<br/>
+                                </p>
+                                </div>
+                                <div className='col-md-6'>
+                                <h4>Additional Tools</h4>
+                                <p id='skill-list'>• MongoDB<br/>
                                     • MySQL<br/>
-                                    • CircleCI<br/>
-                                    • Bootstrap<br/>
+                                    • Agile/Scrum Methodology<br/>
+                                    • CircleCI - Continuous Integration<br/>
+                                    • Loopback<br/>
+                                    • Jira<br/>
                                     • Google Analytics<br/>
                                     • Hootsuite - Social Media Management Platform<br/>
                                 </p>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
