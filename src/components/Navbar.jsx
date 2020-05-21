@@ -37,7 +37,7 @@ export default class Navbar extends React.Component {
                                 <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                                 <a className="nav-link js-scroll-trigger" href="#contact-info">Contact</a>
                             </li>
                         </ul>

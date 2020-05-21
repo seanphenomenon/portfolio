@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
                         <div className='row mb-3'>
                             {/* Movie Finder App */}
                             <div className='col-md-6'>
-                                <h5>Movie Finder App </h5>
+                                <h4 className='d-flex justify-content-center' id='project-title'>Movie Finder App </h4>
                                 <p id='project-info'>• A simple movie finder application built with Javascript, React, Redux, and the OMDb API</p>
                                 
 
@@ -45,7 +45,7 @@ export default class Projects extends React.Component {
                                 
                                 {/* Mortgage Calculator */}
                                 <div className='col-md-6'>
-                                <h5> Mortgage Calculator App </h5>
+                                <h4 className='d-flex justify-content-center' id='project-title'> Mortgage Calculator App </h4>
                                 <p  id='project-info' className='justify-content-center'>• A simple Monthly Mortage Calculator app Built with Javascript, React.js & Bootstrap </p>
                                 
 
@@ -77,7 +77,7 @@ export default class Projects extends React.Component {
                             {/* VSTDA app */}
                             <div className='row justify-content-center'>
                             <div className='col-md-6'>
-                                <h5>To-Do App </h5>
+                                <h4 className='d-flex justify-content-center' id='project-title'> Simple To-Do App </h4>
                                 <p id='project-info'>• Keep track of all your daily tasks with this simple to-do C.R.U.D app! Built with Javascript, React, & Bootstrap!</p>
                                 
 
