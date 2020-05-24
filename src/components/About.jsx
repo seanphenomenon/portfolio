@@ -16,10 +16,10 @@ export default class App extends React.Component {
                         <a href="mailto:name@email.com" id='email'> SeanVHarrell@gmail.com</a>
                         </div>
                         <div>
-                            <p className='mr-4 d-flex justify-content-center mb-5' id="quote">"Inspired by imagination. Driven by results."</p>
+                            <p className='mr-4 d-flex justify-content-center mb-5' id="quote">Inspired by imagination. Driven by results.</p>
                         </div>
                         <p className='mb-5' id='about-me'> Hello, my name is Sean Harrell and I'm a San Diego-based full-stack web developer who is not afraid to handle problems head on. While my path to web development is filled with plenty of twists and turns, my experiences have shaped me into what I believe is an asset within a work setting. <br />
-                        <br /> My previous administrative experience has allowed me to exercise a strong sense of organization, problem solving, communication, and time-management.
+                            <br /> My previous administrative experience has allowed me to exercise a strong sense of organization, problem solving, communication, and time-management.
                         I was entrusted with semi-sensitive resposibilities for San Diego's Community College District, working closely with the Vice Chancellor, and I was noted for quickly learning the ins and outs of the Development Services systems for the City of San Diego. <br /><br />
                             While I enjoy collaborative team-settings where creativity can be exchanged, I am dependable as a single player, too. As a newly bootcamp graduated, I am excited to dive into what lays ahead, learning all that I can along the way. </p>
                         <div className="social-icons mx-auto">
@@ -29,6 +29,9 @@ export default class App extends React.Component {
                             <a href="http://www.github.com/seanphenomenon">
                                 <i className="fab fa-github" id='github-icon'></i>
                             </a>
+                            <a href="https://drive.google.com/file/d/1WKKz-BVHjnrgtybG8GLocQAqh58z8Dx-/view?usp=sharing" target='_blank' rel="noopener noreferrer">
+                                <i className="fas fa-file-csv" id='resume-icon'></i>                                
+                                </a>
                         </div>
                     </section>
                 </div>

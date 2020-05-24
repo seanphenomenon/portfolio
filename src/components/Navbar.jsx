@@ -17,10 +17,10 @@ export default class Navbar extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
 
-                            <li className="nav-item" id='links' activeClassName='selected' data-toggle="collapse" data-target=".navbar-collapse">
+                            <li className="nav-item" activeClassName='selected' data-toggle="collapse" data-target=".navbar-collapse">
                                 <a className="nav-link js-scroll-trigger" href="#page-top">About Me</a>
                             </li>
-                            <li className="nav-item" id='links' data-toggle="collapse" data-target=".navbar-collapse">
+                            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                                 <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
                             </li>
                             <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse">

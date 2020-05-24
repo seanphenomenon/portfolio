@@ -40,18 +40,23 @@ font-size: 20px;
 color: #868e96;
 }
 
+.nav-item {
+font-size: 20px;
+font-family: 'Saira Extra Condensed', sans-serif;
+
+
+}
+
+
+
 #quote {
-    font-size: 28px;
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Saira Extra Condensed', sans-serif;
-
-    font-weight: 10;
+font-size: 28px;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-weight: 10;
 
 
 }
-#links {
-color: white;
-}
+
 
 /* #profile-photo {
 border: 2px solid #fff;
@@ -79,7 +84,7 @@ text-transform: uppercase;
  font-size: 70px;
  font-weight: bold;
  font-family: 'Oswald', sans-serif;
- color:#8854d0;
+ color: #8854d0;
 }
 
 #address {
@@ -143,7 +148,7 @@ width: 200px;
 
 #linked-in-icon {
 font-size:30px;
-margin-right: 20px;
+margin-right: 15px;
 background: #495057;
 color: white;
 padding: 15px;
@@ -158,6 +163,7 @@ background-color: #8854d0;
 #github-icon {
 font-size: 30px;
 background:#495057;
+margin-right: 15px;
 color: white; 
 padding: 15px;
 border-radius: 50%;
@@ -165,6 +171,18 @@ border-radius: 50%;
 
 
 #github-icon:hover {
+background-color:#8854d0;
+}
+
+#resume-icon{
+font-size: 30px;
+background:#495057;
+color: white; 
+padding: 15px;
+border-radius: 50%;
+}
+
+#resume-icon:hover{
 background-color:#8854d0;
 }
 
@@ -193,6 +211,12 @@ text-decoration: none;
 color:#8854d0;
 }
  
+ #github-projects{
+margin-left: 3px;
+ }
+
+
+
 #html-icon {
 font-size:45px;
 margin-right: 20px;
@@ -209,6 +233,10 @@ background: white;
 color:#596275;
 padding: 5px;
 border-radius: 50%;
+}
+#checkmark {
+    font-size: 15px;
+    padding-right: 10px;
 }
 
 #date {

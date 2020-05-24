@@ -106,8 +106,8 @@ export default class Projects extends React.Component {
                                
                             </div>
                         </div>
-
-   
+                            <p className=' subheading d-flex justify-content-center'>For other projects, please visit my <a href='http://www.github.com/seanphenomenon' target='_blank' rel="noopener noreferrer" id='github-projects'> Github</a>.</p>
+                            
                         </div>
                 </section>
                 <hr />
