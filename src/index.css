@@ -5,22 +5,23 @@ scroll-margin-bottom: 0;
 
 body {
  position: relative;
+
 }
 
 .navbar-brand {
-font-size: 30px;
+font-size: 1.875em;
 font-family: 'Oswald', sans-serif;
 }
 
 h2 {
-font-size: 60px;
+font-size: 3.75em;
 text-transform: uppercase;
 font-weight: bold;
 font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 h4 {
-font-size: 30px;
+font-size: 1.875em;
 font-weight: bold;
 text-transform: uppercase;
 font-family: 'Saira Extra Condensed', sans-serif;
@@ -319,11 +320,9 @@ left: 0;
 min-height: 280px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+  
 }
 
 
