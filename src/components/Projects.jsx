@@ -74,27 +74,27 @@ export default class Projects extends React.Component {
                             </div>
                             </div>
 
-                            {/* VSTDA app */}
+                            {/* Joke Generator */}
                             <div className='row justify-content-center'>
                             <div className='col-md-6'>
-                                <h4 className='d-flex justify-content-center' id='project-title'> Simple To-Do App </h4>
-                                <p id='project-info'>• Keep track of all your daily tasks with this simple to-do C.R.U.D app! Built with Javascript, React, & Bootstrap!</p>
+                                <h4 className='d-flex justify-content-center' id='project-title'> Joke Generator </h4>
+                                <p id='project-info'>• A simple joke generator accompanied with funny GIF's! Built with Javascript, React, Bootstrap, the RapidJokeAPI, and the GiphyAPI</p>
                                 
 
-                                <div id="carouselExampleControls-Vstda" className="carousel slide" data-ride="carousel" data-interval='false'>
+                                <div id="carouselExampleControls-Jokes" className="carousel slide" data-ride="carousel" data-interval='false'>
                                     <div className="carousel-inner mx-auto">
                                         <div className="carousel-item active">
-                                            <img className="d-block w-100" src='https://imgur.com/QZ1WKQZ.jpg' alt="First slide" />
+                                            <img className="d-block w-100" src='https://imgur.com/xjx9knb.jpg' alt="First slide" />
                                         </div>
                                         <div className="carousel-item">
-                                            <img className="d-block w-100" src="https://imgur.com/B5oZjxU.jpg" alt="Second slide" />
+                                            <img className="d-block w-100" src="https://imgur.com/xTwF1oG.jpg" alt="Second slide" />
                                         </div>
                                     </div>
-                                    <a className="carousel-control-prev" href="#carouselExampleControls-Vstda" role="button" data-slide="prev">
+                                    <a className="carousel-control-prev" href="#carouselExampleControls-Jokes" role="button" data-slide="prev">
                                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span className="sr-only">Previous</span>
                                     </a>
-                                    <a className="carousel-control-next" href="#carouselExampleControls-Vstda" role="button" data-slide="next">
+                                    <a className="carousel-control-next" href="#carouselExampleControls-Jokes" role="button" data-slide="next">
                                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span className="sr-only">Next</span>
                                     </a>
