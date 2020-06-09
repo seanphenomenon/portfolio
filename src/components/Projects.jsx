@@ -99,8 +99,8 @@ export default class Projects extends React.Component {
                                         <span className="sr-only">Next</span>
                                     </a>
                                     <div className='d-flex justify-content-center'>
-                                     <a href='https://react-100-vstda.herokuapp.com/' id='live-page' target='_blank'rel="noopener noreferrer">View</a>
-                                ||<a href='https://github.com/seanphenomenon/React-100-Vstda/tree/master' id='github-page' target='_blank'rel="noopener noreferrer">GitHub</a>
+                                     <a href='https://hackathon-jokes.herokuapp.com/' id='live-page' target='_blank'rel="noopener noreferrer">View</a>
+                                ||<a href='https://github.com/seanphenomenon/hackathon-starter' id='github-page' target='_blank'rel="noopener noreferrer">GitHub</a>
                                     </div>
                                 </div>
                                
