@@ -29,7 +29,7 @@ export default class App extends React.Component {
                             <a href="http://www.github.com/seanphenomenon">
                                 <i className="fab fa-github" id='github-icon'></i>
                             </a>
-                            <a href="https://drive.google.com/file/d/1kbvWPc2nmjaEsN9plHrPeTRyuak035bR/view?usp=sharing" target='_blank' rel="noopener noreferrer">
+                            <a href="https://drive.google.com/file/d/1_7LTfiKwTq_LyE5wmT5k9-Y_m7bHID5e/view?usp=sharing" target='_blank' rel="noopener noreferrer">
                                 <i className="fas fa-file-csv" id='resume-icon'></i>                                
                                 </a>
                         </div>
