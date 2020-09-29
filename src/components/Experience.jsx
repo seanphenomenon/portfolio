@@ -21,7 +21,7 @@ export default class Experience extends React.Component {
                             </p>
                         </div>
                         <div className=" date text-md-right ml-3" id='date'>
-                            <span className="date">August 2018 - Present</span>
+                            <span className="date">August 2018 - July 2020</span>
                         </div>
                     </div>
 

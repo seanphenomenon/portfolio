@@ -29,7 +29,7 @@ export default class Skills extends React.Component {
                                             <i className="fas fa-check" id='checkmark'></i>
                                             Creative Thinker<br />
                                             <i className="fas fa-check" id='checkmark'></i>
-                                            Independent, but collaborative<br />
+                                            Collaborative & Independent<br />
                                             <i className="fas fa-check" id='checkmark'></i>
                                             Quick Learner<br />
                                             <i className="fas fa-check" id='checkmark'></i>
