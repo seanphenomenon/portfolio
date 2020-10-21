@@ -23,7 +23,7 @@ export default class Skills extends React.Component {
                                 </div>
                                 <div className='row mb-2'>
 
-                                    <div className='col-md-6 mb-2'>
+                                    <div className='col-md-6 mb-2' id='softSkills'>
                                         <h4>Soft Skills</h4>
                                         <p className='text-align-right' id='skill-list'>
                                             <i className="fas fa-check" id='checkmark'></i>
@@ -36,7 +36,7 @@ export default class Skills extends React.Component {
                                             Excellent Time management<br />
                                         </p>
                                     </div>
-                                    <div className='col-md-6'>
+                                    <div className='col-md-6' id='tools'>
                                         <h4>Additional Tools</h4>
                                         <p id='skill-list'>• MongoDB<br />
                                             • MySQL<br />

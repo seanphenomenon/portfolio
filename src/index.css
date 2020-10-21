@@ -1,63 +1,54 @@
 html {
-scroll-behavior: smooth;
-scroll-margin-bottom: 0;
+  scroll-behavior: smooth;
+  scroll-margin-bottom: 0;
 }
 
 body {
- position: relative;
-
+  position: relative;
 }
 
 .navbar-brand {
-font-size: 1.875em;
-font-family: 'Oswald', sans-serif;
+  font-size: 1.875em;
+  font-family: "Oswald", sans-serif;
 }
 
 h2 {
-font-size: 3.75em;
-text-transform: uppercase;
-font-weight: bold;
-font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 3.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 h4 {
-font-size: 1.875em;
-font-weight: bold;
-text-transform: uppercase;
-font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
-
 p {
-font-family: 'Quicksand', sans-serif;
-color: #596275;
-line-height:1.5;
- }
+  font-family: "Quicksand", sans-serif;
+  color: #596275;
+  line-height: 1.5;
+}
 
 .subheading {
-font-family: 'Saira Extra Condensed', sans-serif;
-text-transform: uppercase;
-font-size: 20px;
-color: #868e96;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #868e96;
 }
 
 .nav-item {
-font-size: 20px;
-font-family: 'Saira Extra Condensed', sans-serif;
-
-
+  font-size: 20px;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
-
-
 
 #quote {
-font-size: 28px;
-font-family: 'Saira Extra Condensed', sans-serif;
-font-weight: 10;
-
-
+  font-size: 28px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 10;
 }
-
 
 /* #profile-photo {
 border: 2px solid #fff;
@@ -73,265 +64,337 @@ border-radius: 49.9%;
 } */
 
 #firstName {
-text-transform: uppercase;
- font-size: 70px;
- font-weight: bold;
- font-family: 'Oswald', sans-serif;
- color: #3d3d3d;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #3d3d3d;
 }
 
 #lastName {
-text-transform: uppercase;
- font-size: 70px;
- font-weight: bold;
- font-family: 'Oswald', sans-serif;
- color: #8854d0;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #8854d0;
 }
 
-#address {
-text-transform: uppercase;
-font-size: 30px;
-font-family: 'Saira Extra Condensed', sans-serif;
-line-height:1.5;
-color: #868e96;
+#phone {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  line-height: 1.5;
+  color: #868e96;
 }
 
 #email {
-color: #8854d0;
-line-height: 1.5rem;
-
+  color: #8854d0;
+  line-height: 1.5rem;
 }
 
 #about-me {
-    font-size: 20px;
+  font-size: 20px;
 }
 #project-title {
-    font-size: 30px;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    padding-right: 80px;
-
+  font-size: 30px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  padding-right: 80px;
 }
 
-#experience-info{
-    font-size: 20px;
+#experience-info {
+  font-size: 20px;
 }
 
 #skill-list {
-font-size: 18px;
+  font-size: 18px;
 }
 
 #interest-info {
-font-size: 20px;
+  font-size: 20px;
 }
 
 #contact-info {
-font-size: 20px;
+  font-size: 20px;
 }
 
 #education-info {
-font-size: 20px;
+  font-size: 20px;
 }
 
-#project-info{
-font-size: 20px;
+#project-info {
+  font-size: 20px;
 }
 
 #date {
-color: #8854d0;
-min-width: none;
-font-size: 20px;
-
+  color: #8854d0;
+  min-width: none;
+  font-size: 20px;
+  min-width: 20rem;
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .social-icons {
-width: 200px;
+  width: 200px;
 }
 
 #linked-in-icon {
-font-size:30px;
-margin-right: 15px;
-background: #495057;
-color: white;
-padding: 15px;
-border-radius: 50%;
+  font-size: 30px;
+  margin-right: 15px;
+  background: #495057;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 #linked-in-icon:hover {
-background-color: #8854d0;
-;
+  background-color: #8854d0;
 }
 
 #github-icon {
-font-size: 30px;
-background:#495057;
-margin-right: 15px;
-color: white; 
-padding: 15px;
-border-radius: 50%;
+  font-size: 30px;
+  background: #495057;
+  margin-right: 15px;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
 }
-
 
 #github-icon:hover {
-background-color:#8854d0;
+  background-color: #8854d0;
 }
 
-#resume-icon{
-font-size: 30px;
-background:#495057;
-color: white; 
-padding: 15px;
-border-radius: 50%;
+#resume-icon {
+  font-size: 30px;
+  background: #495057;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
 }
 
-#resume-icon:hover{
-background-color:#8854d0;
+#resume-icon:hover {
+  background-color: #8854d0;
 }
 
 #live-page {
-font-family: 'Quicksand', sans-serif;
-color: black;
-font-weight: bold;
-cursor: hand;
-font-size: 18px;
-text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: bold;
+  cursor: hand;
+  font-size: 18px;
+  text-decoration: none;
 }
 #live-page:hover {
-color:#8854d0;
+  color: #8854d0;
 }
 
 #github-page {
-font-family: 'Quicksand', sans-serif;
-color: black;
-font-weight: bold;
-cursor: hand;
-font-size: 18px;
-text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: bold;
+  cursor: hand;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-#github-page:hover{
-color:#8854d0;
+#github-page:hover {
+  color: #8854d0;
 }
- 
- #github-projects{
-margin-left: 3px;
- }
 
-
+#github-projects {
+  margin-left: 3px;
+}
 
 #html-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 #css-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 #checkmark {
-    font-size: 15px;
-    padding-right: 10px;
-}
-
-#date {
-min-width:18rem;
-flex-shrink: 0;
+  font-size: 15px;
+  padding-right: 10px;
 }
 
 #js-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 #react-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-
 #node-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 #npm-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-#git-icon{
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+#git-icon {
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
-
 
 #slack-icon {
-font-size:45px;
-margin-right: 20px;
-background: white;
-color:#596275;
-padding: 5px;
-border-radius: 50%;
+  font-size: 45px;
+  margin-right: 20px;
+  background: white;
+  color: #596275;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-
 .carousel {
-width:500px;
-height:360px;
+  width: 500px;
+  height: 360px;
 }
 
 .carousel-item {
-height: 280px;
-
+  height: 280px;
 }
 
 .carousel-item img {
-position: absolute;
-object-fit:cover;
-top: 0;
-left: 0;
-min-height: 280px;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 280px;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
-  
+  #firstName {
+    text-align: center;
+  }
+  #phone {
+    text-align: center;
+  }
+
+  #about-me {
+    text-align: center;
+  }
+
+  #skills {
+    text-align: center;
+  }
+  #softSkills {
+    margin-top: 5em;
+  }
+  #tools {
+    margin-top: 5em;
+  }
+  #projects {
+    text-align: center;
+  }
+  #carouselExampleControls-movie {
+    margin-left: 10em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  #carouselExampleControls-mortgage {
+    margin-left: 10em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  #carouselExampleControls-Jokes {
+    margin-left: 10em;
+    margin-top: 2em;
+  }
+  #project-title {
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #experience {
+    text-align: center;
+  }
+  #education {
+    text-align: center;
+  }
+  #interests {
+    text-align: center;
+  }
+  #contact {
+    text-align: center;
+  }
+  #contact-info {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
+@media only screen and (max-width: 767.98px) {
+  #email {
+    display: inline-block;
+  }
 
+  #carouselExampleControls-movie {
+    max-width: 25em;
+    margin-left: 0;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  #carouselExampleControls-mortgage {
+    max-width: 25em;
+    margin-left: 0;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  #carouselExampleControls-Jokes {
+    max-width: 25em;
+    margin-left: 0;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
 
-
+  #date {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 2em;
+    font-size: 1em;
+  }
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-      word-wrap: break-word;
-
+  word-wrap: break-word;
 }
