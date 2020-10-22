@@ -119,7 +119,7 @@ border-radius: 49.9%;
 }
 
 #project-links {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 #more-projects {
@@ -357,31 +357,44 @@ border-radius: 49.9%;
   }
 
   #carouselExampleControls-movie {
-    margin-left: 10em;
+    width: 100%;
     margin-bottom: 2em;
     margin-top: 2em;
   }
   #carouselExampleControls-mortgage {
-    margin-left: 10em;
+    width: 100%;
     margin-bottom: 2em;
     margin-top: 2em;
   }
   #carouselExampleControls-Jokes {
-    margin-left: 10em;
+    width: 100%;
     margin-top: 2em;
+    margin-bottom: 1em;
   }
   #project-title {
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+  #project-info {
+    max-width: 680px;
+  }
 
   #experience {
     text-align: center;
   }
+
+  #experience-info {
+    line-height: 2em;
+  }
+
   #education {
     text-align: center;
   }
+  #education-info {
+    line-height: 2em;
+  }
+
   #interests {
     text-align: center;
   }
@@ -406,20 +419,20 @@ border-radius: 49.9%;
   }
 
   #carouselExampleControls-movie {
-    max-width: 25em;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 2em;
     margin-top: 2em;
   }
 
   #carouselExampleControls-mortgage {
-    max-width: 25em;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 2em;
     margin-top: 2em;
   }
   #carouselExampleControls-Jokes {
-    max-width: 25em;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 2em;
     margin-top: 2em;
@@ -432,9 +445,9 @@ border-radius: 49.9%;
     margin-left: 2em;
     font-size: 1em;
   }
-}
-
-@media only screen and (max-width: 575.98px) {
+  #page-top {
+    text-align: center;
+  }
   #firstName {
     font-size: 3em;
   }
@@ -445,6 +458,59 @@ border-radius: 49.9%;
   #email {
     display: inline-block;
     font-size: 27px;
+  }
+
+  #quote {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #skill-list {
+    line-height: 3em;
+    display: inline-block;
+    margin-top: 2em;
+    word-wrap: none;
+    font-size: 1em;
+  }
+
+  #more-projects {
+    font-size: 1.1em;
+  }
+
+  #education-info {
+    line-height: 2em;
+  }
+  #experience-info {
+    line-height: 2em;
+  }
+
+  #date {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* margin-right: 5; */
+    /* margin-left: 2em; */
+    font-size: 15px;
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  #page-top {
+    text-align: center;
+  }
+  #firstName {
+    font-size: 2em;
+  }
+  #lastName {
+    font-size: 1em;
+  }
+
+  #email {
+    display: inline-block;
+    font-size: 23px;
+  }
+  #phone {
+    font-size: 23px;
   }
 
   #quote {
@@ -488,6 +554,9 @@ border-radius: 49.9%;
     /* margin-left: 2em; */
     font-size: 15px;
     min-width: 0;
+  }
+  #interest-info {
+    font-size: 20px;
   }
 }
 

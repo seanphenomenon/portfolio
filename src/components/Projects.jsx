@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
             <h2 className="mb-5 mt-4">Projects</h2>
             <div className="row">
               {/* Movie Finder App */}
-              <div className="col-lg-6  col-md-12 col-xs-12">
+              <div className="col-lg-6  col-md-12 col-sm-12 col-xs-12">
                 <h4
                   className="d-flex justify-content-center"
                   id="project-title"
