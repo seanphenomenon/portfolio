@@ -21,15 +21,15 @@ export default class Education extends React.Component {
                 </div>
                 <p className="justify-content-left" id="education-info">
                   • Learned full-stack JavaScript development best practices
-                  with React.js, HTML/CSS, Node.js, MongoDB, and MySQL
+                  with HTML/CSS, React.js, Express, Node.js, MongoDB, and MySQL
                   <br />
                   • Participated in group projects where mob programming and/or
                   pair programming were utilized
                   <br />
                   • Implemented Git for version control in both group and
                   individual projects
-                  <br />
-                  • Followed Agile Development principles and practices <br />
+                  <br />• Followed Agile Scrum Development principles and
+                  practices <br />
                 </p>
               </div>
               <div

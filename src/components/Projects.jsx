@@ -7,16 +7,16 @@ export default class Projects extends React.Component {
         <section className=" p-5 align-items-center mb-5" id="projects">
           <div className="w-100">
             <h2 className="mb-5 mt-4">Projects</h2>
-            <div className="row mb-3">
+            <div className="row">
               {/* Movie Finder App */}
-              <div className="col-lg-6  col-md-12">
+              <div className="col-lg-6  col-md-12 col-xs-12">
                 <h4
                   className="d-flex justify-content-center"
                   id="project-title"
                 >
                   Movie Finder App{" "}
                 </h4>
-                <p id="project-info">
+                <p className="justify-content-center" id="project-info">
                   • A simple movie finder application built with Javascript,
                   React, Redux, and the OMDb API
                 </p>
@@ -53,9 +53,10 @@ export default class Projects extends React.Component {
                   </div>
                   <a
                     className="carousel-control-prev"
-                    href="#carouselExampleControls"
+                    href="#carouselExampleControls-movie"
                     role="button"
                     data-slide="prev"
+                    style={{ width: "10%", height: "105%" }}
                   >
                     <span
                       className="carousel-control-prev-icon"
@@ -65,9 +66,10 @@ export default class Projects extends React.Component {
                   </a>
                   <a
                     className="carousel-control-next"
-                    href="#carouselExampleControls"
+                    href="#carouselExampleControls-movie"
                     role="button"
                     data-slide="next"
+                    style={{ width: "10%", height: "105%" }}
                   >
                     <span
                       className="carousel-control-next-icon"
@@ -75,14 +77,17 @@ export default class Projects extends React.Component {
                     ></span>
                     <span className="sr-only">Next</span>
                   </a>
-                  <div className="d-flex justify-content-center">
+                  <div
+                    className="d-flex justify-content-center"
+                    id="project-links"
+                  >
                     <a
                       href="https://react200-movie-finder.herokuapp.com/#/"
                       id="live-page"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View
+                      Live
                     </a>
                     ||{" "}
                     <a
@@ -98,7 +103,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* Mortgage Calculator */}
-              <div className="col-lg-6 col-md-12 ">
+              <div className="col-lg-6 col-md-12 col-xs-12 ">
                 <h4
                   className="d-flex justify-content-center"
                   id="project-title"
@@ -138,6 +143,7 @@ export default class Projects extends React.Component {
                     href="#carouselExampleControls-mortgage"
                     role="button"
                     data-slide="prev"
+                    style={{ width: "15%", height: "100%" }}
                   >
                     <span
                       className="carousel-control-prev-icon"
@@ -151,6 +157,7 @@ export default class Projects extends React.Component {
                     href="#carouselExampleControls-mortgage"
                     role="button"
                     data-slide="next"
+                    style={{ width: "15%", height: "100%" }}
                   >
                     <span
                       className="carousel-control-next-icon"
@@ -158,14 +165,17 @@ export default class Projects extends React.Component {
                     ></span>
                     <span className="sr-only">Next</span>
                   </a>
-                  <div className="d-flex justify-content-center">
+                  <div
+                    className="d-flex justify-content-center"
+                    id="project-links"
+                  >
                     <a
                       href="https://react-100-mortgage-calculator.herokuapp.com"
                       id="live-page"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View
+                      Live
                     </a>
                     ||
                     <a
@@ -224,6 +234,7 @@ export default class Projects extends React.Component {
                     href="#carouselExampleControls-Jokes"
                     role="button"
                     data-slide="prev"
+                    style={{ width: "15%", height: "100%" }}
                   >
                     <span
                       className="carousel-control-prev-icon"
@@ -236,6 +247,7 @@ export default class Projects extends React.Component {
                     href="#carouselExampleControls-Jokes"
                     role="button"
                     data-slide="next"
+                    style={{ width: "15%", height: "100%" }}
                   >
                     <span
                       className="carousel-control-next-icon"
@@ -243,14 +255,17 @@ export default class Projects extends React.Component {
                     ></span>
                     <span className="sr-only">Next</span>
                   </a>
-                  <div className="d-flex justify-content-center">
+                  <div
+                    className="d-flex justify-content-center"
+                    id="project-links"
+                  >
                     <a
                       href="https://hackathon-jokes.herokuapp.com/"
                       id="live-page"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View
+                      Live
                     </a>
                     ||
                     <a
@@ -265,8 +280,11 @@ export default class Projects extends React.Component {
                 </div>
               </div>
             </div>
-            <p className=" subheading d-flex justify-content-center">
-              For other projects, please visit my{" "}
+            <p
+              className=" subheading d-flex justify-content-center"
+              id="more-projects"
+            >
+              For more projects, please visit my{" "}
               <a
                 href="http://www.github.com/seanphenomenon"
                 target="_blank"

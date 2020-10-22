@@ -14,7 +14,7 @@ export default class Experience extends React.Component {
                 <h4 className="mb-0">Public Information Clerk</h4>
 
                 {/* hidden date below on md and up*/}
-                <div className=" date text-md-right ml-3 d-md-none" id="date">
+                <div className="   d-md-none" id="date">
                   <span className="date">August 2018 - July 2020</span>
                 </div>
                 <div className="mb-3 subheading">
@@ -53,7 +53,7 @@ export default class Experience extends React.Component {
 
                 {/* hidden date below on md and up*/}
                 <div
-                  className=" date text-md-right ml-5 d-md-none d-block"
+                  className=" date text-md-right  d-md-none d-block"
                   id="date"
                 >
                   <span className="date">August 2017 - August 2018</span>
