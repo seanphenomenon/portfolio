@@ -330,6 +330,12 @@ border-radius: 49.9%;
   min-height: 280px;
 }
 
+#modal {
+  color: #00b894;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
   #firstName {
@@ -398,7 +404,7 @@ border-radius: 49.9%;
   #interests {
     text-align: center;
   }
-  #contact {
+  #contact-title {
     text-align: center;
   }
   #contact-info {
@@ -445,9 +451,10 @@ border-radius: 49.9%;
     margin-left: 2em;
     font-size: 1em;
   }
-  #page-top {
+  /* #page-top {
     text-align: center;
-  }
+  } */
+
   #firstName {
     font-size: 3em;
   }
@@ -492,12 +499,15 @@ border-radius: 49.9%;
     font-size: 15px;
     min-width: 0;
   }
+  #contact-title {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 575.98px) {
-  #page-top {
+  /* #page-top {
     text-align: center;
-  }
+  } */
   #firstName {
     font-size: 2em;
   }
@@ -557,6 +567,9 @@ border-radius: 49.9%;
   }
   #interest-info {
     font-size: 20px;
+  }
+  form #label {
+    text-align: left;
   }
 }
 

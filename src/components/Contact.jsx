@@ -1,24 +1,123 @@
-import React from 'react';
+import React from "react";
+import emailjs from "emailjs-com";
 
-export default class Contact extends React.Component {
-    
-    render() {
-        return (
-            <div>
-               <section className=' p-5 align-items-center' id="contact">
-                    <div className='w-100'>
-                        <h2 className='p-2 mb-3 mt-2'>Contact</h2>
-                        <div className="d-flex flex-column flex-md-row  mb-5" id='contact-info'>
-                            <div className="p-2 mr-2" >
-                                <p>Let's Connect! Send an email to seanvharrell@gmail.com<br/>
-                                Thanks,<br/>
-                                - Sean</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr/>
+export default function Contact() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        e.target,
+        "user_Bl2lJDuH8sR4jBj6wqDkP"
+      )
+      .then(
+        (result) => {
+          console.log("Message sent successfully!", result.status, result.text);
+        },
+        (error) => {
+          console.log(" Message sent FAILED..", error.text);
+        }
+      );
+  }
+
+  return (
+    <div>
+      <section className=" p-5 align-items-center" id="contact">
+        <div className="w-100">
+          <h2 className="p-2 mb-3 mt-2" id="contact-title">
+            Contact
+          </h2>
+          <div
+            className="d-flex flex-column flex-md-row  mb-5"
+            id="contact-info"
+          >
+            <div className="p-2 mr-2">
+              <p>Send a message and let's connect!</p>
             </div>
-        )
-    }
+          </div>
+          <form className="form-group  col-lg-6 col-md-12" onSubmit={sendEmail}>
+            <label id="label">Name</label>
+            <input
+              className="form-control "
+              type="text"
+              name="user_name"
+              id="inputName"
+            />
+            <br />
+            <label id="label">Phone Number</label>
+            <input
+              className="form-control"
+              type="tel"
+              name="contact_number"
+              id="inputNumber"
+            />
+            <br />
+            <label id="label">Email address</label>
+            <input
+              className="form-control"
+              type="email"
+              name="user_email"
+              id="inputEmail"
+              placeholder="you@example.com"
+            />
+
+            <br />
+            <label id="label">Message</label>
+            <textarea
+              className="form-control"
+              name="message"
+              id="textArea"
+              rows="3"
+              placeholder="How can I help you?"
+            />
+            <br />
+            <input
+              className="btn btn-primary btn-lg btn-block"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              type="submit"
+              value="Send"
+            />
+          </form>
+          {/* ---- Modal -----*/}
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div
+                  class="modal-body"
+                  style={{ textAlign: "center", fontWeight: "bold" }}
+                >
+                  {" "}
+                  <span>
+                    <i className="far fa-check-circle" id="modal"></i>
+                  </span>
+                  Message sent successfully!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </div>
+  );
 }
