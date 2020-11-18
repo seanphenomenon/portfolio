@@ -23,7 +23,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <div className="parallax">
       <section className=" p-5 align-items-center" id="contact">
         <div className="w-100">
           <h2 className="p-2 mb-3 mt-2" id="contact-title">
@@ -39,28 +39,18 @@ export default function Contact() {
           </div>
           <form className="form-group  col-lg-6 col-md-12" onSubmit={sendEmail}>
             <label id="label">Name</label>
-            <input
-              className="form-control "
-              type="text"
-              name="user_name"
-              id="inputName"
-            />
+            <input className="form-control " type="text" name="user_name" />
             <br />
             <label id="label">Phone Number</label>
-            <input
-              className="form-control"
-              type="tel"
-              name="contact_number"
-              id="inputNumber"
-            />
+            <input className="form-control" type="tel" name="contact_number" />
             <br />
-            <label id="label">Email address</label>
+            <label id="label">Email Address</label>
             <input
               className="form-control"
               type="email"
               name="user_email"
-              id="inputEmail"
               placeholder="you@example.com"
+              style={{ padding: "8px" }}
             />
 
             <br />
@@ -68,7 +58,6 @@ export default function Contact() {
             <textarea
               className="form-control"
               name="message"
-              id="textArea"
               rows="3"
               placeholder="How can I help you?"
             />

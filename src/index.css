@@ -90,6 +90,7 @@ border-radius: 49.9%;
 #email {
   color: #8854d0;
   line-height: 1.5rem;
+  text-decoration: none;
 }
 
 #page-top {
@@ -467,7 +468,7 @@ border-radius: 49.9%;
     font-size: 27px;
   }
   #phone {
-    margin-left: 3.5em;
+    margin-left: 2.5em;
   }
 
   #quote {
