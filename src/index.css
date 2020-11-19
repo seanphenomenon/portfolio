@@ -11,66 +11,67 @@ body {
   font-size: 1.875em;
   font-family: "Oswald", sans-serif;
 }
-/* --------- hamburger menu ---------- */
 
-.navbar-toggle {
+/* --------- hamburger menu icon ---------- */
+
+.navbar-toggler {
   border: none;
   background: transparent !important;
 }
 
-.navbar-toggle:focus {
+.navbar-toggler:focus {
   outline: none;
   background: transparent;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
   background-color: #fff;
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all 0.2s;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
   display: block;
-  width: 22px;
+  width: 30px;
   height: 2px;
   border-radius: 1px;
 }
 
-.navbar-toggle .icon-bar + .icon-bar {
+.navbar-toggler .icon-bar + .icon-bar {
   margin-top: 4px;
 }
 
 .icon-bar:nth-child(2) {
+  width: 15px;
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:hover > .icon-bar:nth-child(2) {
+  width: 30px;
+  transition: ease all 0.2s;
+}
+
+.navbar-toggler:active > .icon-bar:nth-child(2) {
   width: 22px;
   transition: ease all 0.2s;
 }
 
-.navbar-toggle:hover > .icon-bar:nth-child(2) {
-  width: 22px;
-  transition: ease all 0.2s;
-}
-
-.navbar-toggle:active > .icon-bar:nth-child(2) {
-  width: 22px;
-  transition: ease all 0.2s;
-}
-
-.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 4px);
   transition: ease all 0.2s;
 }
 
-.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
   opacity: 0;
   transition: ease all 0.2s;
 }
 
-.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
   transition: ease all 0.2s;
 }
 
-/* ----- end of hamburger menu ----- */
+/* ----- end of hamburger menu icon ----- */
 
 h2 {
   font-size: 3.75em;

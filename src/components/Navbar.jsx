@@ -12,8 +12,9 @@ export default function Navbar() {
             <a className="navbar-brand" href="#page-top">
               SH
             </a>
+
             <button
-              className="navbar-toggle collapsed"
+              className="navbar-toggler collapsed"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNav"
@@ -21,13 +22,13 @@ export default function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span>
-                <span className="icon-bar top-bar"></span>
-                <span className="icon-bar middle-bar"></span>
-                <span className="icon-bar bottom-bar"></span>
-                <span className="sr-only">Toggle navigation</span>
-              </span>
+              <span className="icon-bar top-bar"></span>
+              <span className="icon-bar middle-bar"></span>
+              <span className="icon-bar bottom-bar"></span>
+              <span className="sr-only">Toggle navigation</span>
             </button>
+
+            {/* -------- Collapsible content ----------------- */}
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li
