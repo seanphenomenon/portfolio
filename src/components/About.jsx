@@ -72,7 +72,7 @@ export default class App extends React.Component {
               <i className="fab fa-github" id="github-icon"></i>
             </a>
             <a
-              href="https://drive.google.com/file/d/1D2LUzYylORBqCCaMUIPkQ9Uz13KZfj5t/view?usp=sharing"
+              href="https://drive.google.com/file/d/1AYz1pHDh08iStEO5sNJb0mgU2sMHIJA6/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
