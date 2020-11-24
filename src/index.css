@@ -3,8 +3,144 @@ html {
   scroll-margin-bottom: 0;
 }
 
-body {
+/* project overlay */
+
+.project-row {
+  flex-wrap: nowrap;
+  padding: 5px;
+}
+.container_foto {
+  background-color: rgba(57, 62, 93, 0.7);
+  padding: 0;
+  overflow: hidden;
+  max-width: 450px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.container_foto article {
+  padding: 10%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.container_foto h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 25px;
+  border-bottom: #fff solid 1px;
+}
+
+.container_foto h4 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container_foto img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+.ver_mas {
+  background-color: #8854d0;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0px, 70px);
+  -webkit-transform: translate(0px, 70px);
+  -moz-transform: translate(0px, 70px);
+  -o-transform: translate(0px, 70px);
+  -ms-transform: translate(0px, 70px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.ver_mas span {
+  font-size: 40px;
+  color: #fff;
   position: relative;
+  margin: 0 auto;
+  width: 100%;
+  top: 13px;
+}
+
+#eye-icon {
+  color: #fff;
+}
+.container_foto:hover {
+  cursor: pointer;
+}
+
+.container_foto:hover img {
+  opacity: 0.1;
+  transform: scale(1.5);
+}
+
+.container_foto:hover article {
+  transform: translate(2px, -69px);
+  -webkit-transform: translate(2px, -69px);
+  -moz-transform: translate(2px, -69px);
+  -o-transform: translate(2px, -69px);
+  -ms-transform: translate(2px, -69px);
+}
+
+.container_foto:hover .ver_mas {
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+/* end of project overlay  */
+
+p {
+  font-family: "Quicksand", sans-serif;
+  color: #596275;
+  line-height: 1.5;
+  font-size: 20px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #3d3d3d;
+  margin: 15px;
+}
+
+h2 {
+  font-size: 3.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+h4 {
+  font-size: 1.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .navbar-brand {
@@ -73,26 +209,6 @@ body {
 
 /* ----- end of hamburger menu icon ----- */
 
-h2 {
-  font-size: 3.75em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Saira Extra Condensed", sans-serif;
-}
-
-h4 {
-  font-size: 1.875em;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Saira Extra Condensed", sans-serif;
-}
-
-p {
-  font-family: "Quicksand", sans-serif;
-  color: #596275;
-  line-height: 1.5;
-}
-
 .subheading {
   font-family: "Saira Extra Condensed", sans-serif;
   text-transform: uppercase;
@@ -109,27 +225,7 @@ p {
   font-size: 28px;
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 10;
-}
-
-/* #profile-photo {
-border: 2px solid #fff;
-box-shadow: inset 0 1.5px 3px 0 rgba(0,0,0,.15), 0 1.5px 3px 0 rgba(0,0,0,.15);
-margin: -38px auto 12px;
-background-color: #fff;
-width: 152px;
-height: 152px;
-box-sizing: border-box;
-background-clip: content-box;
-border: 1px solid transparent;
-border-radius: 49.9%;
-} */
-
-#firstName {
-  text-transform: uppercase;
-  font-size: 70px;
-  font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  color: #3d3d3d;
+  width: "100%";
 }
 
 #lastName {
@@ -140,12 +236,13 @@ border-radius: 49.9%;
   color: #8854d0;
 }
 
-#phone {
+#contact-about {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Saira Extra Condensed", sans-serif;
   line-height: 1.5;
   color: #868e96;
+  margin: 10px;
 }
 
 #email {
@@ -154,65 +251,20 @@ border-radius: 49.9%;
   text-decoration: none;
 }
 
-#page-top {
-  padding: 15px;
-}
-
-#about-me {
-  font-size: 20px;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%238854d0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%238854d0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-#project-title {
-  font-size: 30px;
-  font-family: "Saira Extra Condensed", sans-serif;
-  padding-right: 80px;
-}
-
-#project-info {
-  max-width: 520px;
-}
-
 #project-links {
-  margin-top: 1em;
+  margin-top: 5;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Quicksand", "sans-serif";
 }
 
-#more-projects {
-  font-size: 1.5em;
-}
-
-#experience-info {
+#info {
   font-size: 20px;
 }
 
 #skill-list {
   font-size: 18px;
-}
-#softSkills {
-  display: inline-block;
-}
-
-#interest-info {
-  font-size: 20px;
-}
-
-#contact-info {
-  font-size: 20px;
-}
-
-#education-info {
-  font-size: 20px;
-}
-
-#project-info {
-  font-size: 20px;
 }
 
 #date {
@@ -222,82 +274,33 @@ border-radius: 49.9%;
   min-width: 20rem;
   flex-shrink: 0;
   text-align: center;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .social-icons {
   width: 200px;
 }
 
-#linked-in-icon {
+#icon {
   font-size: 30px;
-  margin-right: 15px;
+  margin-right: 10px;
   background: #495057;
   color: white;
   padding: 15px;
   border-radius: 50%;
 }
 
-#linked-in-icon:hover {
+#icon:hover {
   background-color: #8854d0;
-}
-
-#github-icon {
-  font-size: 30px;
-  background: #495057;
-  margin-right: 15px;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-}
-
-#github-icon:hover {
-  background-color: #8854d0;
-}
-
-#resume-icon {
-  font-size: 30px;
-  background: #495057;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-}
-
-#resume-icon:hover {
-  background-color: #8854d0;
-}
-
-#live-page {
-  font-family: "Quicksand", sans-serif;
-  color: black;
-  font-weight: bold;
-  cursor: hand;
-  font-size: 18px;
-  text-decoration: none;
-  margin-right: 1em;
-}
-#live-page:hover {
-  color: #8854d0;
-}
-
-#github-page {
-  font-family: "Quicksand", sans-serif;
-  color: black;
-  font-weight: bold;
-  cursor: hand;
-  font-size: 18px;
-  text-decoration: none;
-  margin-left: 1em;
-}
-
-#github-page:hover {
-  color: #8854d0;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 #github-projects {
   margin-left: 3px;
 }
 
-#html-icon {
+#skill-icon {
   font-size: 45px;
   margin-right: 20px;
   background: white;
@@ -305,91 +308,15 @@ border-radius: 49.9%;
   padding: 5px;
   border-radius: 50%;
 }
-
-#css-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
+#skill-list {
+  margin-top: 1em;
+  line-height: 3em;
 }
 
 #checkmark {
   font-size: 15px;
   padding-right: 10px;
   color: #8854d0;
-}
-
-#js-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-#react-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-#node-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-#npm-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-#git-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-#slack-icon {
-  font-size: 45px;
-  margin-right: 20px;
-  background: white;
-  color: #596275;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.carousel {
-  width: 500px;
-  height: 360px;
-}
-
-.carousel-item {
-  height: 280px;
-}
-
-.carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 280px;
 }
 
 #modal {
@@ -400,9 +327,22 @@ border-radius: 49.9%;
 
 @media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
-  #firstName {
-    text-align: center;
+  #projects {
+    padding: 3rem;
   }
+  .project-row {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .container_foto {
+    background-color: rgba(57, 62, 93, 0.7);
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* height: 500px; */
+    margin: 6px;
+  }
+
   #phone {
     text-align: center;
   }
@@ -417,49 +357,22 @@ border-radius: 49.9%;
   #softSkills {
     margin-top: 5em;
   }
-  #tools {
-    margin-top: 5em;
-  }
+
   #projects {
     text-align: center;
   }
 
-  #carouselExampleControls-movie {
-    width: 100%;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  #carouselExampleControls-mortgage {
-    width: 100%;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  #carouselExampleControls-Jokes {
-    width: 100%;
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
   #project-title {
     margin-left: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  #project-info {
-    max-width: 680px;
-  }
 
-  #experience {
+  #experience-title {
     text-align: center;
   }
 
-  #experience-info {
-    line-height: 2em;
-  }
-
-  #education {
-    text-align: center;
-  }
-  #education-info {
+  #info {
     line-height: 2em;
   }
 
@@ -476,6 +389,31 @@ border-radius: 49.9%;
 }
 
 @media only screen and (max-width: 767.98px) {
+  p {
+    text-align: "left";
+    font-size: 16px;
+  }
+
+  h2 {
+    /* for education header; need to fix; */
+    text-align: center;
+  }
+
+  .container_foto {
+    background-color: rgba(57, 62, 93, 0.7);
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* height: 500px; */
+    margin: 6px;
+  }
+  #info {
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    line-height: 2em;
+  }
+
   #phone {
     text-align: center;
     display: inline-block;
@@ -486,26 +424,6 @@ border-radius: 49.9%;
     display: inline-block;
   }
 
-  #carouselExampleControls-movie {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-
-  #carouselExampleControls-mortgage {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  #carouselExampleControls-Jokes {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-
   #date {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -513,9 +431,6 @@ border-radius: 49.9%;
     margin-left: 2em;
     font-size: 1em;
   }
-  /* #page-top {
-    text-align: center;
-  } */
 
   #firstName {
     font-size: 3em;
@@ -535,6 +450,8 @@ border-radius: 49.9%;
   #quote {
     font-size: 22px;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   #skill-list {
@@ -548,21 +465,30 @@ border-radius: 49.9%;
   #more-projects {
     font-size: 1.1em;
   }
-
+  .education-container {
+    max-width: 1000px;
+    margin-top: 2em;
+    text-align: left;
+  }
   #education-info {
     line-height: 2em;
   }
+
   #experience-info {
     line-height: 2em;
+  }
+  .experience-container {
+    padding: 0;
+    text-align: left !important;
   }
 
   #date {
     margin-top: 1em;
     margin-bottom: 1em;
-    /* margin-right: 5; */
-    /* margin-left: 2em; */
+    margin-left: 0;
     font-size: 15px;
     min-width: 0;
+    text-align: left;
   }
   #contact-title {
     text-align: center;
@@ -570,22 +496,54 @@ border-radius: 49.9%;
 }
 
 @media only screen and (max-width: 575.98px) {
-  /* #page-top {
+  .container-fluid {
+    max-width: 1000px;
     text-align: center;
-  } */
-  #firstName {
-    font-size: 2em;
   }
+
+  h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2.75em;
+    width: 1000px;
+  }
+
+  .about-container {
+    font-size: 16px;
+    padding: 5px;
+    max-width: 1000px;
+    text-align: left !important;
+  }
+
+  p {
+    text-align: "left";
+    font-size: 16px;
+  }
+
+  .quote-container {
+    padding: 0;
+  }
+
+  #contact-about {
+    flex-wrap: nowrap;
+  }
+
+  .tools-container {
+    max-width: "1000px";
+    font-size: "16px";
+  }
+
   #lastName {
     font-size: 1em;
   }
 
   #email {
     display: inline-block;
-    font-size: 23px;
+    font-size: 28px;
+    color: #8854d0;
   }
   #phone {
-    font-size: 23px;
+    font-size: 16px;
     margin-left: 0;
   }
 
@@ -594,46 +552,47 @@ border-radius: 49.9%;
     width: 100%;
   }
 
-  #skill-list {
-    line-height: 3em;
-    display: inline-block;
+  #info {
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    line-height: 2em;
+  }
+  .experience-container {
     margin-top: 2em;
-    word-wrap: none;
-    font-size: 1em;
+  }
+  .education-container {
+    max-width: 1000px;
+    margin-top: 2em;
+    text-align: left;
   }
 
-  #more-projects {
-    font-size: 1.1em;
+  .fa-star:hover {
+    color: darkgoldenrod;
   }
 
-  #carouselExampleControls-movie {
-    width: 100%;
-  }
-  #carouselExampleControls-mortgage {
-    width: 100%;
-  }
-  #carouselExampleControls-Jokes {
-    width: 100%;
+  #project-title {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 5;
   }
 
-  #education-info {
-    line-height: 2em;
-  }
-  #experience-info {
-    line-height: 2em;
+  #project-links {
+    font-size: 16px;
   }
 
   #date {
-    margin-top: 1em;
     margin-bottom: 1em;
-    /* margin-right: 5; */
-    /* margin-left: 2em; */
-    font-size: 15px;
-    min-width: 0;
-  }
-  #interest-info {
     font-size: 20px;
+    min-width: 0;
+    margin-left: 0;
   }
+  .subheading {
+    font-size: 21px;
+  }
+
   form #label {
     text-align: left;
   }

@@ -93,10 +93,7 @@ export default function Navbar() {
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                 >
-                  <a
-                    className="nav-link js-scroll-trigger"
-                    href="#contact-info"
-                  >
+                  <a className="nav-link js-scroll-trigger" href="#contact">
                     Contact
                   </a>
                 </li>

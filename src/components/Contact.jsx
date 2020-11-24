@@ -29,10 +29,7 @@ export default function Contact() {
           <h2 className="p-2 mb-3 mt-2" id="contact-title">
             Contact
           </h2>
-          <div
-            className="d-flex flex-column flex-md-row  mb-5"
-            id="contact-info"
-          >
+          <div className="d-flex flex-column flex-md-row  mb-5">
             <div className="p-2 mr-2">
               <p>Send a message and let's connect!</p>
             </div>
