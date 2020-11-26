@@ -12,7 +12,7 @@ export default class Skills extends React.Component {
                 <div className="mb-3 subheading">
                   Programming Languages & Tools
                 </div>
-                <div className="container">
+                <div className="container" style={{ maxWidth: "1000px" }}>
                   <div className="dev-icons mb-5">
                     <i className="fab fa-html5" id="skill-icon"></i>
                     <i className="fab fa-css3-alt" id="skill-icon"></i>
@@ -28,18 +28,19 @@ export default class Skills extends React.Component {
                   <div className="row mb-2">
                     <div className="col-md-6 mb-5" id="softSkills">
                       <h4>Soft Skills</h4>
+                      <hr />
                       <p id="skill-list">
                         <i className="fas fa-check" id="checkmark"></i>
                         Creative Thinker
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
-                        Collaborative & Independent
+                        Collaborative
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
                         Quick Learner
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
-                        Excellent Time Management
+                        Diligent
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
                         Resourceful
@@ -47,6 +48,7 @@ export default class Skills extends React.Component {
                     </div>
                     <div className="col-md-6" id="toolSkills">
                       <h4>Additional Tools</h4>
+                      <hr />
                       <p id="skill-list">
                         <i className="fas fa-check" id="checkmark"></i>
                         MongoDB
@@ -58,7 +60,7 @@ export default class Skills extends React.Component {
                         Material UI
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
-                        Agile/Scrum Methodology
+                        Scrum Methodology
                         <br />
                         <i className="fas fa-check" id="checkmark"></i>
                         CircleCI

@@ -31,7 +31,7 @@ export default function Contact() {
           </h2>
           <div className="d-flex flex-column flex-md-row  mb-5">
             <div className="p-2 mr-2">
-              <p>Send a message and let's connect!</p>
+              <p id="contact-text">Send a message and let's connect!</p>
             </div>
           </div>
           <form className="form-group  col-lg-6 col-md-12" onSubmit={sendEmail}>
@@ -69,19 +69,19 @@ export default function Contact() {
           </form>
           {/* ---- Modal -----*/}
           <div
-            class="modal fade"
+            className="modal fade"
             id="exampleModal"
-            tabindex="-1"
+            tabIndex="-1"
             role="dialog"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
@@ -89,7 +89,7 @@ export default function Contact() {
                   </button>
                 </div>
                 <div
-                  class="modal-body"
+                  className="modal-body"
                   style={{ textAlign: "center", fontWeight: "bold" }}
                 >
                   {" "}

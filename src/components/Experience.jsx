@@ -6,7 +6,7 @@ export default class Experience extends React.Component {
       <div>
         <section className="p-5 align-items-center" id="experience">
           <div className="w-100">
-            <h2 className="p-2 mb-3 mt-4" id="experience-title">
+            <h2 className="p-2 mb-5 mt-4" id="experience-title">
               Experience
             </h2>
             <div
@@ -25,41 +25,20 @@ export default class Experience extends React.Component {
                   </div>
 
                   <p id="experience-info">
-                    <i
-                      className="fas fa-star"
-                      style={{ marginLeft: -20, marginRight: 5 }}
-                      id="star-icon"
-                    ></i>
                     Provided excellent customer service in a fast-paced
                     environment. <br />
                     <br />
-                    <i
-                      className="fas fa-star"
-                      style={{ marginLeft: -20, marginRight: 5 }}
-                    ></i>
                     Assisted in the Over-The-Counter Issuance of city permits
                     for repairs to mechanical, electrical, plumbing, and fire
                     systems.
                     <br /> <br />
-                    <i
-                      className="fas fa-star"
-                      style={{ marginLeft: -20, marginRight: 5 }}
-                    ></i>
                     Helped project managers and customers with the intake of
                     project re-submittals.
                     <br /> <br />
-                    <i
-                      className="fas fa-star"
-                      style={{ marginLeft: -20, marginRight: 5 }}
-                    ></i>
                     Utilized the Project Tracking Software to set-up new
                     projects, analyze situations, and provided a variety of
                     project status updates to agents.
                     <br /> <br />
-                    <i
-                      className="fas fa-star"
-                      style={{ marginLeft: -20, marginRight: 5 }}
-                    ></i>
                     Processed and distributed plans to respective development
                     discipline departments.
                     <br /> <br />
@@ -89,36 +68,20 @@ export default class Experience extends React.Component {
                   San Diego Community College District
                 </div>
                 <p id="experience-info">
-                  <i
-                    className="fas fa-star"
-                    style={{ marginLeft: -20, marginRight: 5 }}
-                  ></i>
                   Handled urgent administrative needs and scheduled conference
                   meetings for District faculty, staff, and administrators -
                   including Deans, Senior Secretaries, and Vice Chancellor
                   <br /> <br />
-                  <i
-                    className="fas fa-star"
-                    style={{ marginLeft: -20, marginRight: 5 }}
-                  ></i>
                   Prepared documents and all other meeting materials for
                   inclusion into Cabinet Meeting, Board Meeting, and Committee
                   Meetings on behalf of the Vice Chancellor and Interim Dean of
                   Instructional Services.
                   <br /> <br />
-                  <i
-                    className="fas fa-star"
-                    style={{ marginLeft: -20, marginRight: 5 }}
-                  ></i>
                   Conducted grant analysis research and developed grant tracking
                   spreadsheets in support of quarterly districtwide grant
                   reporting and annual presentation of grants and contracts to
                   the Board of Trustees.
                   <br /> <br />
-                  <i
-                    className="fas fa-star"
-                    style={{ marginLeft: -20, marginRight: 5 }}
-                  ></i>
                   Monitored budgets, purchases, and expenditures for department
                   through PeopleSoft and Excel
                   <br /> <br />

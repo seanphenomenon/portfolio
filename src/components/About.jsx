@@ -6,7 +6,7 @@ export default class App extends React.Component {
       <div>
         <section id="page-top">
           <div className="container-fluid">
-            <div className="row  d-flex justify-content-lg-start justify-content-sm-center">
+            <div className="row  d-flex justify-content-lg-start justify-content-center">
               <h1>
                 Sean
                 <span className="p-1" id="lastName">
@@ -14,16 +14,9 @@ export default class App extends React.Component {
                 </span>
               </h1>
             </div>
-            <div className="row justify-content-lg-start justify-content-sm-center">
+            <div className="row  d-flex justify-content-lg-start  justify-content-center">
               <div className="subheading mb-5 " id="contact-about">
-                <span
-                  role="img"
-                  aria-label="telephone"
-                  style={{
-                    marginLeft: 5,
-                    marginRight: 0,
-                  }}
-                >
+                <span role="img" aria-label="telephone">
                   📱
                 </span>
                 (619) 917-2304
@@ -36,10 +29,22 @@ export default class App extends React.Component {
               </div>
             </div>
 
-            <div className="quote-container ">
-              <p className="d-flex justify-content-center mb-5" id="quote">
-                Inspired by imagination. Driven by results.
-              </p>
+            <div
+              className="quote-container justify-content-lg-start justify-content-center "
+              style={{ width: "100%", margin: "0 auto" }}
+            >
+              <span className="left" style={{ display: "inline-block" }}>
+                Inspired by imagin
+                <span style={{ color: "#8854d0" }}>a</span>tion.
+              </span>
+              <span
+                className="right"
+                style={{
+                  display: "inline-block",
+                }}
+              >
+                Driven by r<span style={{ color: "#8854d0" }}>e</span>sults.
+              </span>
             </div>
             <div className="about-container">
               <p className="mb-5">

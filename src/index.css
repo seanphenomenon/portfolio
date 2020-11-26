@@ -3,6 +3,53 @@ html {
   scroll-margin-bottom: 0;
 }
 
+.quote-container {
+  height: 100px;
+}
+@keyframes moveInL {
+  0% {
+    transform: translate(-1000%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes moveInR {
+  0% {
+    transform: translate(1000%, 0);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+.left {
+  font-family: "Rubik";
+  font-size: 3em;
+  font-weight: 700;
+  animation-name: moveInL;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.right {
+  font-family: "Rubik";
+
+  font-size: 3em;
+  font-weight: 700;
+  padding-left: 5;
+  animation-name: moveInR;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
 /* project overlay */
 
 .project-row {
@@ -13,7 +60,7 @@ html {
   background-color: rgba(57, 62, 93, 0.7);
   padding: 0;
   overflow: hidden;
-  max-width: 450px;
+  max-width: 410px;
   margin: 10px;
   border-radius: 10px;
 }
@@ -54,7 +101,7 @@ html {
   transition: all 4s ease;
 }
 
-.ver_mas {
+.popup-overlay {
   background-color: #8854d0;
   position: absolute;
   width: 100%;
@@ -74,7 +121,7 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-.ver_mas span {
+.popup-overlay span {
   font-size: 40px;
   color: #fff;
   position: relative;
@@ -103,7 +150,7 @@ html {
   -ms-transform: translate(2px, -69px);
 }
 
-.container_foto:hover .ver_mas {
+.container_foto:hover .popup-overlay {
   transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -249,6 +296,8 @@ h4 {
   color: #8854d0;
   line-height: 1.5rem;
   text-decoration: none;
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 #project-links {
@@ -327,6 +376,53 @@ h4 {
 
 @media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
+  h2 {
+    text-align: center;
+  }
+
+  @keyframes moveInL {
+    0% {
+      transform: translate(-1000%, 0);
+    }
+    100% {
+      transform: translate(0%, 0);
+    }
+  }
+
+  @keyframes moveInR {
+    0% {
+      transform: translate(1000%, 0);
+    }
+    100% {
+      transform: translate(5%, 0);
+    }
+  }
+  .left {
+    font-family: "Rubik";
+    font-size: 2.2em;
+    font-weight: 700;
+    animation-name: moveInL;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
+  .right {
+    font-family: "Rubik";
+
+    font-size: 2.2em;
+    font-weight: 500;
+    padding-left: 5;
+    animation-name: moveInR;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
   #projects {
     padding: 3rem;
   }
@@ -354,8 +450,8 @@ h4 {
   #skills {
     text-align: center;
   }
-  #softSkills {
-    margin-top: 5em;
+  #skill-list {
+    text-align: left;
   }
 
   #projects {
@@ -389,6 +485,53 @@ h4 {
 }
 
 @media only screen and (max-width: 767.98px) {
+  .quote-container {
+    height: 100px;
+  }
+  @keyframes moveInL {
+    0% {
+      transform: translate(-1000%, 0);
+    }
+    100% {
+      transform: translate(8%, 0);
+    }
+  }
+
+  @keyframes moveInR {
+    0% {
+      transform: translate(1000%, 0);
+    }
+    100% {
+      transform: translate(15%, 0);
+    }
+  }
+
+  .left {
+    font-family: "Rubik";
+    font-size: 7.8vh;
+    font-weight: 700;
+    animation-name: moveInL;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
+  .right {
+    font-family: "Rubik";
+
+    font-size: 7.8vh;
+    font-weight: 700;
+    padding-left: 5;
+    animation-name: moveInR;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
   p {
     text-align: "left";
     font-size: 16px;
@@ -406,6 +549,11 @@ h4 {
     max-width: 100%;
     /* height: 500px; */
     margin: 6px;
+  }
+
+  #contact-about {
+    font-size: 22px;
+    margin-left: 0;
   }
   #info {
     font-size: 16px;
@@ -453,13 +601,16 @@ h4 {
     margin: 0;
     padding: 0;
   }
-
+  #softSkills {
+    width: 100%;
+  }
   #skill-list {
     line-height: 3em;
     display: inline-block;
     margin-top: 2em;
     word-wrap: none;
     font-size: 1em;
+    text-align: left;
   }
 
   #more-projects {
@@ -493,24 +644,71 @@ h4 {
   #contact-title {
     text-align: center;
   }
+  #contact-text {
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .container-fluid {
+  .quote-container {
     max-width: 1000px;
-    text-align: center;
+  }
+  @keyframes moveInL {
+    0% {
+      transform: translate(-1000%, 0);
+    }
+    100% {
+      transform: translate(0%, 0);
+    }
+  }
+
+  @keyframes moveInR {
+    0% {
+      transform: translate(1000%, 0);
+    }
+    100% {
+      transform: translate(5%, 0);
+    }
+  }
+  .left {
+    font-family: "Rubik";
+    font-size: 20px;
+    /* padding-bottom: 5px; */
+    font-weight: 700;
+    animation-name: moveInL;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
+  .right {
+    font-family: "Rubik";
+
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 5;
+    animation-name: moveInR;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+
+  .container_foto {
+    max-width: 450px;
+    height: 15em;
+    margin: 10px;
   }
 
   h1 {
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: 2.75em;
-    width: 1000px;
   }
 
   .about-container {
     font-size: 16px;
-    padding: 5px;
     max-width: 1000px;
     text-align: left !important;
   }
@@ -522,33 +720,38 @@ h4 {
 
   .quote-container {
     padding: 0;
+    height: 100px;
+    text-align: center;
   }
 
   #contact-about {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-align: center;
+    /* padding-left: 3.75em; */
   }
-
-  .tools-container {
-    max-width: "1000px";
-    font-size: "16px";
+  #email {
+    font-size: 15px !important;
+  }
+  .social-icons {
+    font-size: 18px;
+  }
+  .dev-icons {
+    margin-left: 20px;
+  }
+  #softSkills {
+    text-align: center;
+  }
+  #skill-list {
+    text-align: left;
   }
 
   #lastName {
     font-size: 1em;
   }
 
-  #email {
-    display: inline-block;
-    font-size: 28px;
-    color: #8854d0;
-  }
-  #phone {
-    font-size: 16px;
-    margin-left: 0;
-  }
-
   #quote {
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
   }
 
@@ -558,6 +761,7 @@ h4 {
     padding: 0;
     line-height: 2em;
   }
+
   .experience-container {
     margin-top: 2em;
   }
@@ -566,31 +770,25 @@ h4 {
     margin-top: 2em;
     text-align: left;
   }
-
-  .fa-star:hover {
-    color: darkgoldenrod;
-  }
-
-  #project-title {
+  #education-info {
     max-width: 1000px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    margin-bottom: 5;
   }
 
   #project-links {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   #date {
     margin-bottom: 1em;
-    font-size: 20px;
+    font-size: 22px;
     min-width: 0;
     margin-left: 0;
   }
   .subheading {
-    font-size: 21px;
+    font-size: 22px;
+  }
+  #contact-text {
+    text-align: left;
   }
 
   form #label {

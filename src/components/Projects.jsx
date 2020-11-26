@@ -5,12 +5,12 @@ export default class Projects extends React.Component {
     return (
       <div>
         <section className=" align-items-center mb-5" id="projects">
-          <h2 className="mb-5 mt-4 p-5">Projects</h2>
+          <h2 className="mb-5 mt-3 p-5">Projects</h2>
           <div className="project-container  text-center">
             <div className="row project-row  justify-content-center ">
               {/* ---- Movie Finder App  ---- */}
               <div className="col-lg-4  col-md-12 col-sm-12 col-xs-12 offset-lg-2  container_foto">
-                <div className="ver_mas text-center">
+                <div className="popup-overlay text-center">
                   <span>
                     <a
                       href="https://react200-movie-finder.herokuapp.com/#/"
@@ -38,7 +38,7 @@ export default class Projects extends React.Component {
 
               {/* ---- Mortgage Calculator ----- */}
               <div className="col-lg-4 col-md-12 col-sm-12 container_foto">
-                <div className="ver_mas text-center">
+                <div className="popup-overlay text-center">
                   <span>
                     <a
                       href="https://github.com/seanphenomenon/React-100-Mortgage-Calculator"
@@ -69,11 +69,8 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Joke Generator ----- */}
-              <div
-                className="col-lg-4 col-md-12 col-sm-12 container_foto"
-                // style={{ maxWidth: "400px", marginLeft: 5 }}
-              >
-                <div className="ver_mas text-center">
+              <div className="col-lg-4 col-md-12 col-sm-12 container_foto">
+                <div className="popup-overlay text-center">
                   <span>
                     <a
                       href="https://hackathon-jokes.herokuapp.com/"
