@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
           <div className="project-container  text-center">
             <div className="row project-row  justify-content-center ">
               {/* ---- Movie Finder App  ---- */}
-              <div className="col-lg-4  col-md-12 col-sm-12 col-xs-12 offset-lg-2  container_foto">
+              <div className="col-lg-4  col-md-12 col-sm-12 col-xs-12 offset-lg-2  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a
@@ -37,7 +37,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Mortgage Calculator ----- */}
-              <div className="col-lg-4 col-md-12 col-sm-12 container_foto">
+              <div className="col-lg-4 col-md-12 col-sm-12 container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a
@@ -69,7 +69,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Joke Generator ----- */}
-              <div className="col-lg-4 col-md-12 col-sm-12 container_foto">
+              <div className="col-lg-4 col-md-12 col-sm-12 container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a

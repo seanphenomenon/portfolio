@@ -32,7 +32,7 @@ html {
   animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   animation-delay: 0.5s;
 }
 
@@ -46,7 +46,7 @@ html {
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   animation-delay: 0.5s;
 }
 
@@ -56,7 +56,7 @@ html {
   flex-wrap: nowrap;
   padding: 5px;
 }
-.container_foto {
+.container_photo {
   background-color: rgba(57, 62, 93, 0.7);
   padding: 0;
   overflow: hidden;
@@ -65,7 +65,7 @@ html {
   border-radius: 10px;
 }
 
-.container_foto article {
+.container_photo article {
   padding: 10%;
   position: absolute;
   bottom: 0;
@@ -76,20 +76,20 @@ html {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.container_foto h2 {
+.container_photo h2 {
   color: #fff;
   font-weight: 800;
   font-size: 25px;
   border-bottom: #fff solid 1px;
 }
 
-.container_foto h4 {
+.container_photo h4 {
   font-weight: 300;
   color: #fff;
   font-size: 16px;
 }
 
-.container_foto img {
+.container_photo img {
   width: 100%;
   top: 0;
   left: 0;
@@ -133,16 +133,16 @@ html {
 #eye-icon {
   color: #fff;
 }
-.container_foto:hover {
+.container_photo:hover {
   cursor: pointer;
 }
 
-.container_foto:hover img {
+.container_photo:hover img {
   opacity: 0.1;
   transform: scale(1.5);
 }
 
-.container_foto:hover article {
+.container_photo:hover article {
   transform: translate(2px, -69px);
   -webkit-transform: translate(2px, -69px);
   -moz-transform: translate(2px, -69px);
@@ -150,7 +150,7 @@ html {
   -ms-transform: translate(2px, -69px);
 }
 
-.container_foto:hover .popup-overlay {
+.container_photo:hover .popup-overlay {
   transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -376,10 +376,8 @@ h4 {
 
 @media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
-  h2 {
-    text-align: center;
-  }
 
+  /* ----- quote animation ------- */
   @keyframes moveInL {
     0% {
       transform: translate(-1000%, 0);
@@ -423,6 +421,12 @@ h4 {
     animation-delay: 0.5s;
   }
 
+  /* ---- end of quote animation ----- */
+
+  h2 {
+    text-align: center;
+  }
+
   #projects {
     padding: 3rem;
   }
@@ -430,7 +434,7 @@ h4 {
     flex-wrap: wrap;
     padding: 0;
   }
-  .container_foto {
+  .container_photo {
     background-color: rgba(57, 62, 93, 0.7);
     padding: 0;
     overflow: hidden;
@@ -542,7 +546,7 @@ h4 {
     text-align: center;
   }
 
-  .container_foto {
+  .container_photo {
     background-color: rgba(57, 62, 93, 0.7);
     padding: 0;
     overflow: hidden;
@@ -697,7 +701,7 @@ h4 {
     animation-delay: 0.5s;
   }
 
-  .container_foto {
+  .container_photo {
     max-width: 450px;
     height: 15em;
     margin: 10px;
