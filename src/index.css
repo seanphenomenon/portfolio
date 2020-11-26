@@ -403,7 +403,7 @@ h4 {
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
@@ -417,7 +417,7 @@ h4 {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
@@ -518,7 +518,7 @@ h4 {
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
@@ -532,7 +532,7 @@ h4 {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
@@ -683,7 +683,7 @@ h4 {
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.2, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
@@ -697,7 +697,7 @@ h4 {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(1, 1.1, 0, 1);
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-delay: 0.5s;
   }
 
