@@ -30,8 +30,13 @@ export default class App extends React.Component {
             </div>
 
             <div
-              className="quote-container justify-content-lg-start justify-content-center "
-              style={{ width: "100%", margin: "0 auto" }}
+              className="quote-container justify-content-center "
+              style={{
+                maxWidth: "1000px",
+                height: "100px",
+                textAlign: "center",
+                margin: "0 auto",
+              }}
             >
               <span className="left" style={{ display: "inline-block" }}>
                 Inspired by imagin
