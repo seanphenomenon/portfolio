@@ -394,7 +394,7 @@ h4 {
       transform: translate(1000%, 0);
     }
     100% {
-      transform: translate(5%, 0);
+      transform: translate(2%, 0);
     }
   }
   .left {
@@ -502,7 +502,7 @@ h4 {
       transform: translate(1000%, 0);
     }
     100% {
-      transform: translate(5%, 0);
+      transform: translate(2%, 0);
     }
   }
 
