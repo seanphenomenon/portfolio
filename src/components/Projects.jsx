@@ -21,6 +21,16 @@ export default class Projects extends React.Component {
                       <i className="fas fa-eye" id="eye-icon"></i>
                     </a>
                   </span>
+                  <span>
+                    <a
+                      href="https://github.com/seanphenomenon/react200-movie-finder"
+                      id="project-links"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fas fa-laptop-code" id="eye-icon"></i>
+                    </a>
+                  </span>
                 </div>
                 <article className="text-left">
                   <h2>Movie Finder App</h2>
@@ -48,6 +58,20 @@ export default class Projects extends React.Component {
                     >
                       <i
                         className="fas fa-eye"
+                        id="eye-icon"
+                        style={{ fontSize: "1em", color: "white" }}
+                      ></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href="https://github.com/seanphenomenon/React-100-Mortgage-Calculator"
+                      id="project-links"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i
+                        className="fas fa-laptop-code"
                         id="eye-icon"
                         style={{ fontSize: "1em", color: "white" }}
                       ></i>
@@ -81,6 +105,20 @@ export default class Projects extends React.Component {
                       <i
                         className="fas fa-eye"
                         id="eye-icon"
+                        style={{ fontSize: "1em", color: "white" }}
+                      ></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href="https://github.com/seanphenomenon/hackathon-starter"
+                      id="project-links"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i
+                        className="fas fa-laptop-code"
+                        id="code-icon"
                         style={{ fontSize: "1em", color: "white" }}
                       ></i>
                     </a>
