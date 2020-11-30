@@ -1,5 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-deployed on Netlify: https://seanharrell-portfolio.netlify.app
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Made with HTML, CSS, Bootstrap, React, and EmailJS.  
+Deployed on Netlify: https://seanharrell.netlify.app
 
 ## Available Scripts
 
