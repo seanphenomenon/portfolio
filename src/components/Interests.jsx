@@ -4,7 +4,7 @@ export default class Interests extends React.Component {
   render() {
     return (
       <div>
-        <section className=" p-5 align-items-center" id="interests">
+        <section className=" p-5 align-items-center mb-5" id="interests">
           <div className="w-100">
             <h2 className="p-2 mb-3 mt-3">Interests</h2>
             <div className="resume-item d-flex flex-column flex-md-row justify-content-center">
@@ -19,7 +19,7 @@ export default class Interests extends React.Component {
             </div>
           </div>
         </section>
-        <hr />
+        {/* <hr /> */}
       </div>
     );
   }

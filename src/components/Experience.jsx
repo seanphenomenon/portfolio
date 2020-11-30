@@ -94,9 +94,9 @@ export default class Experience extends React.Component {
                 <span className="date">August 2017 - August 2018</span>
               </div>
             </div>
-            <hr className="m-0" id="education" />
           </div>
         </section>
+        {/* <hr /> */}
       </div>
     );
   }

@@ -103,7 +103,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <hr />
+      {/* <hr /> */}
     </div>
   );
 }

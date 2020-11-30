@@ -4,9 +4,9 @@ export default class Skills extends React.Component {
   render() {
     return (
       <div>
-        <section className="p-5 align-items-center" id="skills">
+        <section className="p-5 align-items-center mb-5" id="skills">
           <div className="w-100">
-            <h2 className="p-2 mb-5 mt-3">Skills</h2>
+            <h2 className="p-2 mb-5 mt-3 ">Skills</h2>
             <div className=" d-flex flex-column flex-md-row justify-content-center">
               <div className="p-2">
                 <div className="mb-3 subheading">
@@ -85,7 +85,6 @@ export default class Skills extends React.Component {
             </div>
           </div>
         </section>
-        <hr />
       </div>
     );
   }

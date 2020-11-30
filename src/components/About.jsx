@@ -91,7 +91,7 @@ export default class App extends React.Component {
             </div>
           </div>
         </section>
-        <hr />
+        {/* <hr /> */}
       </div>
     );
   }

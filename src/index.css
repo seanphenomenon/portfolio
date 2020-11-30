@@ -2,7 +2,10 @@ html {
   scroll-behavior: smooth;
   scroll-margin-bottom: 0;
 }
-
+.wave-container {
+  display: block;
+}
+/* ------- quote animation ----------*/
 .quote-container {
   height: 100px;
 }
@@ -50,7 +53,8 @@ html {
   animation-delay: 0.5s;
 }
 
-/* project overlay */
+/* ---- end of quote animation ------ */
+/*----- project overlay --------- */
 
 .project-row {
   flex-wrap: nowrap;
@@ -159,7 +163,7 @@ html {
   opacity: 1;
 }
 
-/* end of project overlay  */
+/* ---- end of project overlay ------- */
 
 p {
   font-family: "Quicksand", sans-serif;
@@ -462,12 +466,6 @@ h4 {
     text-align: center;
   }
 
-  #project-title {
-    margin-left: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
   #experience-title {
     text-align: center;
   }
@@ -489,6 +487,8 @@ h4 {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* --- quote animation --- */
+
   .quote-container {
     margin-bottom: 10em;
   }
@@ -534,6 +534,7 @@ h4 {
     animation-fill-mode: both;
     animation-delay: 0.5s;
   }
+  /* ---- end of quote animation --- */
 
   p {
     text-align: "left";
@@ -653,6 +654,8 @@ h4 {
 }
 
 @media only screen and (max-width: 575.98px) {
+  /* ---- quote animation ------ */
+
   @keyframes moveInL {
     0% {
       transform: translate(-1000%, 0);
@@ -696,12 +699,15 @@ h4 {
     animation-fill-mode: both;
     animation-delay: 0.5s;
   }
+  /* ---- end of quotation animation ---- */
 
+  /* -- project overlay --- */
   .container_photo {
     max-width: 450px;
     height: 15em;
     margin: 10px;
   }
+  /* --- end of project overlay --- */
 
   h1 {
     font-size: 2.75em;

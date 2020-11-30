@@ -5,9 +5,9 @@ export default class Projects extends React.Component {
     return (
       <div>
         <section className=" align-items-center mb-5" id="projects">
-          <h2 className="mb-5 mt-3 p-5">Projects</h2>
-          <div className="project-container  text-center">
-            <div className="row project-row  justify-content-center ">
+          <h2 className="mb-5 mt-3 p-5 ">Projects</h2>
+          <div className="project-container text-center">
+            <div className="row project-row justify-content-center ">
               {/* ---- Movie Finder App  ---- */}
               <div className="col-lg-4  col-md-12 col-sm-12 col-xs-12 offset-lg-2  container_photo">
                 <div className="popup-overlay text-center">
@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
                 <div className="popup-overlay text-center">
                   <span>
                     <a
-                      href="https://github.com/seanphenomenon/React-100-Mortgage-Calculator"
+                      href="https://react-100-mortgage-calculator.herokuapp.com"
                       id="project-links"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -120,7 +120,6 @@ export default class Projects extends React.Component {
             </div>
           </div>
         </section>
-        <hr />
       </div>
     );
   }

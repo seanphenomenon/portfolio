@@ -6,7 +6,7 @@ export default class Education extends React.Component {
       <div>
         <section className="p-5 align-items-center" id="education">
           <div className="w-100">
-            <h2 className="p-2 mb-5">Education</h2>
+            <h2 className="p-2 mb-5 mt-3">Education</h2>
 
             <div className="resume-item d-flex flex-column flex-md-row justify-content-center mb-5">
               <div className="p-2">
@@ -77,7 +77,6 @@ export default class Education extends React.Component {
             </div>
           </div>
         </section>
-        <hr className="m-0" />
       </div>
     );
   }
