@@ -323,7 +323,7 @@ h4 {
 #date {
   color: #8854d0;
   min-width: none;
-  font-size: 20px;
+  font-size: 22px;
   min-width: 20rem;
   flex-shrink: 0;
   text-align: center;
@@ -361,6 +361,14 @@ h4 {
   padding: 5px;
   border-radius: 50%;
 }
+
+#skill-icon:hover {
+  color: #8854d0;
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
 #skill-list {
   margin-top: 1em;
   line-height: 3em;
@@ -372,6 +380,10 @@ h4 {
   color: #8854d0;
 }
 
+#guitar-img {
+  width: 500px;
+  height: 500px;
+}
 input {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -463,6 +475,7 @@ textarea {
 
   #skills {
     text-align: center;
+    margin-bottom: 0;
   }
   #skill-list {
     text-align: left;
@@ -482,6 +495,10 @@ textarea {
 
   #interests {
     text-align: center;
+  }
+  #guitar-img {
+    max-width: 250px;
+    height: 300px;
   }
   #contact-title {
     text-align: center;
@@ -642,6 +659,10 @@ textarea {
     padding: 0;
     text-align: left !important;
   }
+  #guitar-img {
+    width: 500px;
+    height: 300px;
+  }
 
   #date {
     margin-top: 1em;
@@ -681,7 +702,7 @@ textarea {
   }
   .left {
     font-family: "Rubik";
-    font-size: 1.4em;
+    font-size: 1.2em;
     /* padding-bottom: 5px; */
     font-weight: 700;
     animation-name: moveInL;
@@ -695,7 +716,7 @@ textarea {
   .right {
     font-family: "Rubik";
 
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 600;
     padding-left: 5;
     animation-name: moveInR;
@@ -728,10 +749,11 @@ textarea {
   p {
     text-align: "left";
     font-size: 16px;
+    max-width: "1000px";
   }
 
   .quote-container {
-    padding: 0;
+    padding: 0px 5px 0px 5px;
     height: 100px;
     text-align: center;
   }
@@ -785,9 +807,15 @@ textarea {
   #education-info {
     max-width: 1000px;
   }
+  #projects {
+    margin-bottom: 0;
+  }
 
   #project-links {
     font-size: 1em;
+  }
+  #experience {
+    margin-bottom: 0;
   }
 
   #date {
@@ -795,6 +823,10 @@ textarea {
     font-size: 22px;
     min-width: 0;
     margin-left: 0;
+  }
+  #guitar-img {
+    max-width: 200px;
+    height: 300px;
   }
   .subheading {
     font-size: 22px;

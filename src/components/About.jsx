@@ -5,8 +5,8 @@ export default class App extends React.Component {
     return (
       <div>
         <section id="page-top">
-          <div className="container-fluid">
-            <div className="row  d-flex justify-content-lg-start justify-content-center">
+          <div className="container-fluid mb-5">
+            <div className="row  d-flex p-2 justify-content-lg-start justify-content-center">
               <h1>
                 Sean
                 <span className="p-1" id="lastName">
@@ -14,7 +14,7 @@ export default class App extends React.Component {
                 </span>
               </h1>
             </div>
-            <div className="row  d-flex justify-content-lg-start  justify-content-center">
+            <div className="row  p-2 d-flex justify-content-lg-start justify-content-center">
               <div className="subheading mb-5 " id="contact-about">
                 <span role="img" aria-label="telephone">
                   📱
@@ -39,8 +39,7 @@ export default class App extends React.Component {
               }}
             >
               <span className="left" style={{ display: "inline-block" }}>
-                Inspired by imagin
-                <span style={{ color: "#8854d0" }}>a</span>tion.
+                Inspired by imagination.
               </span>
               <span
                 className="right"
@@ -48,11 +47,11 @@ export default class App extends React.Component {
                   display: "inline-block",
                 }}
               >
-                Driven by r<span style={{ color: "#8854d0" }}>e</span>sults.
+                Driven by results.
               </span>
             </div>
             <div className="about-container">
-              <p className="mb-5">
+              <p className="mb-5" style={{ padding: "20px" }}>
                 Hello, my name is Sean Harrell and I'm a San Diego-based Jr.
                 Software Engineer who is not afraid to handle problems head on.
                 While my path to web development is filled with plenty of twists

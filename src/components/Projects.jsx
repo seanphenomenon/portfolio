@@ -5,7 +5,9 @@ export default class Projects extends React.Component {
     return (
       <div>
         <section className=" align-items-center mb-5" id="projects">
-          <h2 className="mb-5 mt-3 p-5 ">Projects</h2>
+          <h2 className="mb-5 mt-3 p-5 " id="project-title">
+            Projects
+          </h2>
           <div className="project-container text-center">
             <div className="row project-row justify-content-center ">
               {/* ---- Movie Finder App  ---- */}

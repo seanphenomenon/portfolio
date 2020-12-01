@@ -10,7 +10,7 @@ export default class Experience extends React.Component {
               Experience
             </h2>
             <div
-              className="d-flex flex-column flex-md-row justify-content-center mb-5"
+              className="d-flex flex-column flex-md-row justify-content-start mb-5"
               id="experience-container"
             >
               <div className="experience-container">
@@ -24,7 +24,7 @@ export default class Experience extends React.Component {
                     City of San Diego - Development Services
                   </div>
 
-                  <p id="experience-info">
+                  <p id="experience-info" style={{ maxWidth: "800px" }}>
                     Provided excellent customer service in a fast-paced
                     environment. <br />
                     <br />
@@ -46,14 +46,14 @@ export default class Experience extends React.Component {
                 </div>
               </div>
               <div
-                className=" date text-md-right ml-3 d-none d-md-block"
+                className=" date text-md-right ml-4 d-none d-md-block"
                 id="date"
               >
                 <span className="date">August 2018 - July 2020</span>
               </div>
             </div>
 
-            <div className="d-flex flex-column flex-md-row justify-content-center mb-5">
+            <div className="d-flex flex-column flex-md-row justify-content-start mb-5">
               <div className="p-2">
                 <h4 className="mb-0">Senior Secretary</h4>
 
@@ -67,10 +67,10 @@ export default class Experience extends React.Component {
                 <div className="mb-3 subheading">
                   San Diego Community College District
                 </div>
-                <p id="experience-info">
+                <p id="experience-info" style={{ maxWidth: "800px" }}>
                   Handled urgent administrative needs and scheduled conference
                   meetings for District faculty, staff, and administrators -
-                  including Deans, Senior Secretaries, and Vice Chancellor
+                  including Deans, Senior Secretaries, and the Vice Chancellor.
                   <br /> <br />
                   Prepared documents and all other meeting materials for
                   inclusion into Cabinet Meeting, Board Meeting, and Committee
@@ -83,12 +83,12 @@ export default class Experience extends React.Component {
                   the Board of Trustees.
                   <br /> <br />
                   Monitored budgets, purchases, and expenditures for department
-                  through PeopleSoft and Excel
+                  through PeopleSoft and Excel.
                   <br /> <br />
                 </p>
               </div>
               <div
-                className=" date text-md-right ml-5 d-none d-md-block"
+                className=" date text-md-right ml-4 d-none d-md-block"
                 id="date"
               >
                 <span className="date">August 2017 - August 2018</span>
