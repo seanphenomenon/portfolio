@@ -6,7 +6,7 @@ export default class App extends React.Component {
       <div>
         <section id="page-top">
           <div className="container-fluid mb-5">
-            <div className="row  d-flex p-2 justify-content-lg-start justify-content-center">
+            <div className="row  d-flex p-3 justify-content-lg-start justify-content-center">
               <h1>
                 Sean
                 <span className="p-1" id="lastName">
@@ -14,7 +14,7 @@ export default class App extends React.Component {
                 </span>
               </h1>
             </div>
-            <div className="row  p-2 d-flex justify-content-lg-start justify-content-center">
+            <div className="row  p-3 d-flex justify-content-lg-start justify-content-center">
               <div className="subheading mb-5 " id="contact-about">
                 <span role="img" aria-label="telephone">
                   📱

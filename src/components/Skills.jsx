@@ -6,7 +6,9 @@ export default class Skills extends React.Component {
       <div>
         <section className="p-5 align-items-center mb-5" id="skills">
           <div className="w-100">
-            <h2 className="p-2 mb-5 mt-3 ">Skills</h2>
+            <h2 className="p-2 mb-5 mt-3 text-lg-left  text-sm-center">
+              Skills
+            </h2>
             <div className=" d-flex flex-column flex-md-row justify-content-center">
               <div className="p-2">
                 <div className="mb-3 subheading">
@@ -26,7 +28,7 @@ export default class Skills extends React.Component {
                 </div>
                 <div className="container">
                   <div className="row mb-2">
-                    <div className="col-md-6 mb-5" id="softSkills">
+                    <div className="col-md-6 mb-5 text-md-left" id="softSkills">
                       <h4>Soft Skills</h4>
                       <hr />
                       <p id="skill-list">
@@ -46,7 +48,7 @@ export default class Skills extends React.Component {
                         Resourceful
                       </p>
                     </div>
-                    <div className="col-md-6" id="toolSkills">
+                    <div className="col-md-6 text-md-left" id="toolSkills">
                       <h4>Additional Tools</h4>
                       <hr />
                       <p id="skill-list">

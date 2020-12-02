@@ -6,7 +6,9 @@ export default class Interests extends React.Component {
       <div>
         <section className=" p-5 align-items-center mb-5" id="interests">
           <div className="w-100">
-            <h2 className="p-2 mb-3 mt-3">Interests</h2>
+            <h2 className="p-2 mb-3 mt-3  text-lg-left text-sm-center">
+              Interests
+            </h2>
             <div className="resume-item d-flex flex-column flex-md-row justify-content-start">
               <div className="p-2 mr-2 col-md-7 col-sm-12" id="info">
                 <p style={{ maxWidth: "950px", textAlign: "left" }}>

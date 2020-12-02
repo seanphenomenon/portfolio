@@ -2,9 +2,6 @@ html {
   scroll-behavior: smooth;
   scroll-margin-bottom: 0;
 }
-.wave-container {
-  display: block;
-}
 /* ------- quote animation ----------*/
 .quote-container {
   height: 100px;
@@ -64,7 +61,7 @@ html {
   background-color: rgba(57, 62, 93, 0.7);
   padding: 0;
   overflow: hidden;
-  max-width: 410px;
+  width: 100%;
   margin: 10px;
   border-radius: 10px;
 }
@@ -381,7 +378,7 @@ h4 {
 }
 
 #guitar-img {
-  width: 500px;
+  width: 400px;
   height: 500px;
 }
 input {
@@ -398,6 +395,16 @@ textarea {
 
 @media only screen and (max-width: 991.98px) {
   /* For mobile phones: */
+
+  /* --- collapse hamburger menu alignment -- */
+
+  #navbarNav {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 1rem;
+    font-size: 1.5em;
+  }
 
   /* ----- quote animation ------- */
   @keyframes moveInL {
@@ -445,17 +452,10 @@ textarea {
 
   /* ---- end of quote animation ----- */
 
-  h2 {
-    text-align: center;
-  }
-
   #projects {
     padding: 3rem;
   }
-  .project-row {
-    flex-wrap: wrap;
-    padding: 0;
-  }
+
   .container_photo {
     background-color: rgba(57, 62, 93, 0.7);
     padding: 0;
@@ -510,6 +510,12 @@ textarea {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* --- collapse hamburger menu alignment -- */
+  .nav-link {
+    padding: 1rem;
+    font-size: 1.5em;
+  }
+
   /* --- quote animation --- */
 
   .quote-container {
@@ -564,11 +570,6 @@ textarea {
     font-size: 16px;
   }
 
-  h2 {
-    /* for education header; need to fix; */
-    text-align: center;
-  }
-
   .container_photo {
     background-color: rgba(57, 62, 93, 0.7);
     padding: 0;
@@ -593,18 +594,6 @@ textarea {
     text-align: center;
     display: inline-block;
     margin-right: 1em;
-  }
-
-  #email {
-    display: inline-block;
-  }
-
-  #date {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    margin-left: 2em;
-    font-size: 1em;
   }
 
   #firstName {
@@ -643,11 +632,7 @@ textarea {
   #more-projects {
     font-size: 1.1em;
   }
-  .education-container {
-    max-width: 1000px;
-    margin-top: 2em;
-    text-align: left;
-  }
+
   #education-info {
     line-height: 2em;
   }
@@ -668,7 +653,7 @@ textarea {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 0;
-    font-size: 15px;
+    font-size: 22px;
     min-width: 0;
     text-align: left;
   }
@@ -681,6 +666,12 @@ textarea {
 }
 
 @media only screen and (max-width: 575.98px) {
+  /* --- collapse hamburger menu alignment -- */
+  .nav-link {
+    padding: 1rem;
+    font-size: 1.2em;
+  }
+
   /* ---- quote animation ------ */
 
   @keyframes moveInL {
@@ -806,6 +797,11 @@ textarea {
   }
   #education-info {
     max-width: 1000px;
+  }
+
+  /* needed to center education title. need to fix this */
+  .education-header {
+    text-align: center !important;
   }
   #projects {
     margin-bottom: 0;

@@ -4,10 +4,11 @@ export default class Education extends React.Component {
   render() {
     return (
       <div>
-        <section className="p-5 align-items-center" id="education">
+        <section className="p-5" id="education">
           <div className="w-100">
-            <h2 className="p-2 mb-5 mt-3">Education</h2>
-
+            <h2 className=" education-header p-2 mb-5 mt-3 text-lg-left text-sm-center">
+              Education
+            </h2>
             <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
               <div className="p-2">
                 <h4>San Diego Code School</h4>

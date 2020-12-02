@@ -5,13 +5,16 @@ export default class Projects extends React.Component {
     return (
       <div>
         <section className=" align-items-center mb-5" id="projects">
-          <h2 className="mb-5 mt-3 p-5 " id="project-title">
+          <h2
+            className="mb-5 mt-3 p-5 text-lg-left text-sm-center "
+            id="project-title"
+          >
             Projects
           </h2>
-          <div className="project-container text-center">
-            <div className="row project-row justify-content-center ">
+          <div className="container-fluid">
+            <div className="row justify-content-center ">
               {/* ---- Movie Finder App  ---- */}
-              <div className="col-lg-4  col-md-12 col-sm-12 col-xs-12 offset-lg-2  container_photo">
+              <div className="col-md  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a
@@ -34,9 +37,9 @@ export default class Projects extends React.Component {
                     </a>
                   </span>
                 </div>
-                <article className="text-left">
-                  <h2>Movie Finder App</h2>
-                  <h4>
+                <article className="card-title text-left">
+                  <h2 style={{ textAlign: "left" }}>Movie Finder App</h2>
+                  <h4 style={{ maxWidth: "200px", maxHeight: "35px" }}>
                     A simple movie finder application built with Javascript,
                     React, Redux, and the OMDb API
                   </h4>
@@ -49,7 +52,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Mortgage Calculator ----- */}
-              <div className="col-lg-4 col-md-12 col-sm-12 container_photo">
+              <div className=" col-md  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a
@@ -80,9 +83,9 @@ export default class Projects extends React.Component {
                     </a>
                   </span>
                 </div>
-                <article className="text-left">
-                  <h2>Mortgage Calculator App</h2>
-                  <h4>
+                <article className="card-title text-left">
+                  <h2 style={{ textAlign: "left" }}>Mortgage App</h2>
+                  <h4 style={{ maxWidth: "200px", maxHeight: "35px" }}>
                     A simple monthly mortage calculator app built with
                     Javascript, React & Bootstrap.
                   </h4>
@@ -95,7 +98,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Joke Generator ----- */}
-              <div className="col-lg-4 col-md-12 col-sm-12 container_photo">
+              <div className="col-md  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
                     <a
@@ -126,9 +129,9 @@ export default class Projects extends React.Component {
                     </a>
                   </span>
                 </div>
-                <article className="text-left">
-                  <h2>Joke Generator App</h2>
-                  <h4>
+                <article className="card-title text-left">
+                  <h2 style={{ textAlign: "left" }}>Joke Generator App</h2>
+                  <h4 style={{ maxWidth: "200px", maxHeight: "35px" }}>
                     A simple joke generator built with Javascript, React,
                     Bootstrap, and RapidJoke & Giphy API's
                   </h4>
