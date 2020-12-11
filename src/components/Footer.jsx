@@ -18,14 +18,14 @@ export default function Footer() {
             <i
               className="fab fa-linkedin-in"
               id="footer-icon"
-              style={{ fontSize: "1.3em", padding: "10px", color: "#fff" }}
+              style={{ fontSize: "1em", padding: "10px", color: "#fff" }}
             ></i>
           </a>
           <a href="http://www.github.com/seanphenomenon">
             <i
               className="fab fa-github"
               id="footer-icon"
-              style={{ fontSize: "1.3em", padding: "10px", color: "#fff" }}
+              style={{ fontSize: "1em", padding: "10px", color: "#fff" }}
             ></i>
           </a>
         </div>
