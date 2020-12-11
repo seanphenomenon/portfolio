@@ -1,29 +1,31 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
-export default class Experience extends React.Component {
-  render() {
-    return (
-      <div>
-        <section className="p-5 align-items-center" id="experience">
-          <div className="w-100">
-            <h2 className="p-2 mb-5 mt-4" id="experience-title">
-              Experience
-            </h2>
-            <div
-              className="d-flex flex-column flex-md-row justify-content-start mb-5"
-              id="experience-container"
-            >
-              <div className="experience-container">
-                <div className="p-2">
-                  <h4 className="mb-0">Public Information Clerk</h4>
-                  {/* hidden date below on md and up*/}
+export default function Experience() {
+  return (
+    <div>
+      <section className="p-5 align-items-center" id="experience">
+        <div className="w-100">
+          <h2 className="p-2 mb-5 mt-4" id="experience-title">
+            Experience
+          </h2>
+          <div
+            className="d-flex flex-column flex-md-row justify-content-start mb-5"
+            id="experience-container"
+          >
+            <div className="experience-container">
+              <div className="p-2">
+                <h4 className="mb-0">Public Information Clerk</h4>
+                {/* hidden date below on md and up*/}
+                <Fade>
                   <div className="   d-md-none" id="date">
                     <span className="date">August 2018 - July 2020</span>
                   </div>
+                </Fade>
+                <Fade>
                   <div className="mb-3 subheading">
                     City of San Diego - Development Services
                   </div>
-
                   <p id="experience-info" style={{ maxWidth: "800px" }}>
                     Provided excellent customer service in a fast-paced
                     environment. <br />
@@ -43,27 +45,32 @@ export default class Experience extends React.Component {
                     discipline departments.
                     <br /> <br />
                   </p>
-                </div>
+                </Fade>
               </div>
+            </div>
+            <Fade>
               <div
                 className=" date text-md-right ml-4 d-none d-md-block"
                 id="date"
               >
                 <span className="date">August 2018 - July 2020</span>
               </div>
-            </div>
+            </Fade>
+          </div>
 
-            <div className="d-flex flex-column flex-md-row justify-content-start mb-5">
-              <div className="p-2">
-                <h4 className="mb-0">Senior Secretary</h4>
-
-                {/* hidden date below on md and up*/}
+          <div className="d-flex flex-column flex-md-row justify-content-start mb-5">
+            <div className="p-2">
+              <h4 className="mb-0">Senior Secretary</h4>
+              {/* hidden date below on md and up*/}
+              <Fade>
                 <div
                   className=" date text-md-right  d-md-none d-block"
                   id="date"
                 >
                   <span className="date">August 2017 - August 2018</span>
                 </div>
+              </Fade>
+              <Fade>
                 <div className="mb-3 subheading">
                   San Diego Community College District
                 </div>
@@ -86,18 +93,18 @@ export default class Experience extends React.Component {
                   through PeopleSoft and Excel.
                   <br /> <br />
                 </p>
-              </div>
-              <div
-                className=" date text-md-right ml-4 d-none d-md-block"
-                id="date"
-              >
-                <span className="date">August 2017 - August 2018</span>
-              </div>
+              </Fade>
+            </div>
+            <div
+              className=" date text-md-right ml-4 d-none d-md-block"
+              id="date"
+            >
+              <span className="date">August 2017 - August 2018</span>
             </div>
           </div>
-        </section>
-        {/* <hr /> */}
-      </div>
-    );
-  }
+        </div>
+      </section>
+      {/* <hr /> */}
+    </div>
+  );
 }

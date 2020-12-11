@@ -1,18 +1,18 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
-export default class Education extends React.Component {
-  render() {
-    return (
-      <div>
-        <section className="p-5" id="education">
-          <div className="w-100">
-            <h2 className=" education-header p-2 mb-5 mt-3 text-lg-left text-sm-center">
-              Education
-            </h2>
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
-              <div className="p-2">
-                <h4>San Diego Code School</h4>
-
+export default function Education() {
+  return (
+    <div>
+      <section className="p-5" id="education">
+        <div className="w-100">
+          <h2 className=" education-header p-2 mb-5 mt-3 text-lg-left text-sm-center">
+            Education
+          </h2>
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
+            <div className="p-2">
+              <h4>San Diego Code School</h4>
+              <Fade>
                 {/* hidden date below on md and up*/}
                 <div className=" date text-md-right d-md-none " id="date">
                   <span>November 2019 - May 2020</span>
@@ -36,19 +36,22 @@ export default class Education extends React.Component {
                   Followed Agile Scrum Development principles and practices.
                   <br />
                 </p>
-              </div>
+              </Fade>
+            </div>
+            <Fade>
               <div
                 className=" date text-md-right ml-3 d-none d-md-block"
                 id="date"
               >
                 <span>November 2019 - May 2020</span>
               </div>
-            </div>
+            </Fade>
+          </div>
 
-            <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
-              <div className="p-2">
-                <h4>San Diego State University</h4>
-
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
+            <div className="p-2">
+              <h4>San Diego State University</h4>
+              <Fade>
                 {/* hidden date below on md and up*/}
                 <div className=" date text-md-right d-md-none " id="date">
                   <span>September 2012 - December 2015</span>
@@ -68,17 +71,19 @@ export default class Education extends React.Component {
                   <br />
                   Proficient in Google Analytics and Hootsuite. <br />
                 </p>
-              </div>
+              </Fade>
+            </div>
+            <Fade>
               <div
                 className=" date text-md-right ml-4 d-none d-md-block"
                 id="date"
               >
                 <span>September 2012 - December 2015</span>
               </div>
-            </div>
+            </Fade>
           </div>
-        </section>
-      </div>
-    );
-  }
+        </div>
+      </section>
+    </div>
+  );
 }

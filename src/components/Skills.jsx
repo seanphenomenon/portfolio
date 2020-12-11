@@ -1,19 +1,20 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
-export default class Skills extends React.Component {
-  render() {
-    return (
-      <div>
-        <section className="p-5 align-items-center mb-5" id="skills">
-          <div className="w-100">
-            <h2 className="p-2 mb-5 mt-3 text-lg-left  text-sm-center">
-              Skills
-            </h2>
-            <div className=" d-flex flex-column flex-md-row justify-content-center">
-              <div className="p-2">
+export default function Skills() {
+  return (
+    <div>
+      <section className="p-5 align-items-center mb-5" id="skills">
+        <div className="w-100">
+          <h2 className="p-2 mb-5 mt-3 text-lg-left  text-sm-center">Skills</h2>
+          <div className=" d-flex flex-column flex-md-row justify-content-center">
+            <div className="p-2">
+              <Fade top>
                 <div className="mb-3 subheading">
                   Programming Languages & Tools
                 </div>
+              </Fade>
+              <Fade top>
                 <div className="container" style={{ maxWidth: "1000px" }}>
                   <div className="dev-icons mb-5">
                     <i className="fab fa-html5" id="skill-icon"></i>
@@ -26,11 +27,13 @@ export default class Skills extends React.Component {
                     <i className="fab fa-slack" id="skill-icon"></i>
                   </div>
                 </div>
-                <div className="container">
-                  <div className="row mb-2">
-                    <div className="col-md-6 mb-5 text-md-left" id="softSkills">
-                      <h4>Soft Skills</h4>
-                      <hr />
+              </Fade>
+              <div className="container">
+                <div className="row mb-2">
+                  <div className="col-md-6 mb-5 text-md-left" id="softSkills">
+                    <h4>Soft Skills</h4>
+                    <hr />
+                    <Fade bottom>
                       <p id="skill-list">
                         <i className="fas fa-check" id="checkmark"></i>
                         Creative Thinker
@@ -47,10 +50,12 @@ export default class Skills extends React.Component {
                         <i className="fas fa-check" id="checkmark"></i>
                         Resourceful
                       </p>
-                    </div>
-                    <div className="col-md-6 text-md-left" id="toolSkills">
-                      <h4>Additional Tools</h4>
-                      <hr />
+                    </Fade>
+                  </div>
+                  <div className="col-md-6 text-md-left" id="toolSkills">
+                    <h4>Additional Tools</h4>
+                    <hr />
+                    <Fade bottom>
                       <p id="skill-list">
                         <i className="fas fa-check" id="checkmark"></i>
                         MongoDB
@@ -80,14 +85,14 @@ export default class Skills extends React.Component {
                         Hootsuite
                         <br />
                       </p>
-                    </div>
+                    </Fade>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-    );
-  }
+        </div>
+      </section>
+    </div>
+  );
 }

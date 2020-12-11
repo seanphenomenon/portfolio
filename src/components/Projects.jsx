@@ -1,19 +1,20 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
-export default class Projects extends React.Component {
-  render() {
-    return (
-      <div>
-        <section className=" align-items-center mb-5" id="projects">
-          <h2
-            className="mb-5 mt-3 p-5 text-lg-left text-sm-center "
-            id="project-title"
-          >
-            Projects
-          </h2>
-          <div className="container-fluid">
-            <div className="row justify-content-center ">
-              {/* ---- Movie Finder App  ---- */}
+export default function Projects() {
+  return (
+    <div>
+      <section className=" align-items-center mb-5" id="projects">
+        <h2
+          className="mb-5 mt-3 p-5 text-lg-left text-sm-center "
+          id="project-title"
+        >
+          Projects
+        </h2>
+        <div className="container-fluid">
+          <div className="row justify-content-center ">
+            {/* ---- Movie Finder App  ---- */}
+            <Fade>
               <div className="col-md  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
@@ -98,6 +99,7 @@ export default class Projects extends React.Component {
               </div>
 
               {/* ---- Joke Generator ----- */}
+
               <div className="col-md  container_photo">
                 <div className="popup-overlay text-center">
                   <span>
@@ -142,11 +144,14 @@ export default class Projects extends React.Component {
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
-            </div>
-            <div
-              className="row justify-content-center"
-              style={{ marginTop: "5em" }}
-            >
+            </Fade>
+          </div>
+
+          <div
+            className="row justify-content-center"
+            style={{ marginTop: "5em" }}
+          >
+            <Fade top>
               <p className=" subheading d-flex " id="more-projects">
                 For more projects, please visit my{" "}
                 <a
@@ -160,10 +165,10 @@ export default class Projects extends React.Component {
                 </a>
                 .
               </p>
-            </div>
+            </Fade>
           </div>
-        </section>
-      </div>
-    );
-  }
+        </div>
+      </section>
+    </div>
+  );
 }
