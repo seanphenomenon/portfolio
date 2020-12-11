@@ -401,10 +401,9 @@ textarea {
   margin-right: 10px;
 }
 
-.footer {
-  background: "red";
-}
-.footer-text {
+#footer-icon {
+  font-size: "1.3em";
+  padding: "10px";
   color: "#fff";
 }
 
