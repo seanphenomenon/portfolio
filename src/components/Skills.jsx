@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 
 export default function Skills() {
   return (
@@ -14,7 +15,7 @@ export default function Skills() {
                   Programming Languages & Tools
                 </div>
               </Fade>
-              <Fade top>
+              <Flip top>
                 <div className="container" style={{ maxWidth: "1000px" }}>
                   <div className="dev-icons mb-5">
                     <i className="fab fa-html5" id="skill-icon"></i>
@@ -27,7 +28,7 @@ export default function Skills() {
                     <i className="fab fa-slack" id="skill-icon"></i>
                   </div>
                 </div>
-              </Fade>
+              </Flip>
               <div className="container">
                 <div className="row mb-2">
                   <div className="col-md-6 mb-5 text-md-left" id="softSkills">

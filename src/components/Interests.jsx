@@ -27,6 +27,7 @@ export default function Interests() {
                   src="https://www.flaticon.com/svg/static/icons/svg/1615/1615027.svg"
                   alt="guitar"
                   id="guitar-img"
+                  style={{ filter: "drop-shadow(30px 10px 4px #888888)" }}
                 />
               </div>
             </Zoom>

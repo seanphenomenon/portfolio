@@ -19,12 +19,14 @@ export default function About() {
           <div className="row  p-3 d-flex justify-content-lg-start justify-content-center">
             <Fade top>
               <div className="subheading mb-5 " id="contact-about">
-                <span role="img" aria-label="telephone">
-                  📱
+                <span role="img" aria-label="telephone" id="contact-icon">
+                  <i className="fas fa-mobile-alt"></i>
                 </span>
                 (619) 917-2304
                 <a href="mailto:name@email.com" id="email">
-                  <span role="img" aria-label="mailbox"></span>{" "}
+                  <span role="img" aria-label="mailbox" id="contact-icon">
+                    <i className="far fa-envelope"></i>
+                  </span>{" "}
                   seanvharrell@gmail.com
                 </a>
               </div>

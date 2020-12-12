@@ -64,6 +64,7 @@ html {
   width: 100%;
   margin: 10px;
   border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .container_photo article {
@@ -293,6 +294,11 @@ h4 {
   margin: 10px;
 }
 
+#contact-icon {
+  color: black;
+  padding: 5px;
+}
+
 #email {
   color: #8854d0;
   line-height: 1.5rem;
@@ -415,9 +421,12 @@ textarea {
   #navbarNav {
     text-align: center;
   }
+  .navbar {
+    padding-bottom: 20px;
+  }
   .nav-link {
-    padding: 1rem;
-    font-size: 1.5em;
+    padding: 5px;
+    font-size: 1em;
   }
 
   /* ----- quote animation ------- */
@@ -525,9 +534,12 @@ textarea {
 
 @media only screen and (max-width: 767.98px) {
   /* --- collapse hamburger menu alignment -- */
+  .navbar {
+    padding-bottom: 20px;
+  }
   .nav-link {
-    padding: 1rem;
-    font-size: 1.5em;
+    padding: 8px;
+    font-size: 16px;
   }
 
   /* --- quote animation --- */
@@ -594,7 +606,7 @@ textarea {
   }
 
   #contact-about {
-    font-size: 22px;
+    font-size: 27px;
     margin-left: 0;
   }
   #info {
@@ -602,12 +614,6 @@ textarea {
     text-align: left;
     padding: 0;
     line-height: 2em;
-  }
-
-  #phone {
-    text-align: center;
-    display: inline-block;
-    margin-right: 1em;
   }
 
   #firstName {
@@ -620,9 +626,6 @@ textarea {
   #email {
     display: inline-block;
     font-size: 27px;
-  }
-  #phone {
-    margin-left: 2.5em;
   }
 
   #quote {
@@ -681,9 +684,13 @@ textarea {
 
 @media only screen and (max-width: 575.98px) {
   /* --- collapse hamburger menu alignment -- */
+  .navbar {
+    padding-bottom: 20px;
+  }
+
   .nav-link {
-    padding: 1rem;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 16px;
   }
 
   /* ---- quote animation ------ */
