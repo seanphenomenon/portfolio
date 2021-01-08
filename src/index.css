@@ -2,14 +2,28 @@ html {
   scroll-behavior: smooth;
   scroll-margin-bottom: 0;
 }
-/* ------- quote animation ----------*/
-.quote-container {
-  height: 100px;
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --purple: #8854d0;
+  --gray: #868e96;
+  --green: #00b894;
 }
+
+/* ------- QUOTE ANIMATION ----------*/
+.quote__container {
+  height: 100px;
+  max-width: 1000px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @keyframes moveInL {
   0% {
     transform: translate(-1000%, 0);
   }
+
   100% {
     transform: translate(0%, 0);
   }
@@ -19,13 +33,15 @@ html {
   0% {
     transform: translate(1000%, 0);
   }
+
   100% {
-    transform: translate(2%, 0);
+    transform: translate(3%, 0);
   }
 }
 
-.left {
-  font-family: "Rubik";
+.quote__left {
+  display: inline-block;
+  font-family: 'Rubik';
   font-size: 2.5em;
   font-weight: 700;
   animation-name: moveInL;
@@ -36,9 +52,9 @@ html {
   animation-delay: 0.5s;
 }
 
-.right {
-  font-family: "Rubik";
-
+.quote__right {
+  display: inline-block;
+  font-family: 'Rubik';
   font-size: 2.5em;
   font-weight: 700;
   padding-left: 5;
@@ -49,14 +65,15 @@ html {
   animation-fill-mode: both;
   animation-delay: 0.5s;
 }
+/* ---- END OF QUOTE ANIMATION ------ */
 
-/* ---- end of quote animation ------ */
-/*----- project overlay --------- */
+/*----- PROJECT OVERLAY --------- */
 
 .project-row {
   flex-wrap: nowrap;
   padding: 5px;
 }
+
 .container_photo {
   background-color: rgba(57, 62, 93, 0.7);
   padding: 0;
@@ -64,7 +81,7 @@ html {
   width: 100%;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 5px 10px 8px #888888;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .container_photo article {
@@ -78,16 +95,17 @@ html {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .container_photo h2 {
-  color: #fff;
+  color: var(--white);
   font-weight: 800;
   font-size: 25px;
-  border-bottom: #fff solid 1px;
+  border-bottom: 1px solid var(--white);
 }
 
 .container_photo h4 {
   font-weight: 300;
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -104,7 +122,7 @@ html {
 }
 
 .popup-overlay {
-  background-color: #8854d0;
+  background-color: var(--purple);
   position: absolute;
   width: 100%;
   height: 70px;
@@ -125,16 +143,19 @@ html {
 
 .popup-overlay span {
   font-size: 40px;
-  color: #fff;
+  color: var(--white);
   position: relative;
   margin: 0 auto;
   width: 100%;
   top: 13px;
+  padding: 5px;
 }
 
-#eye-icon {
-  color: #fff;
+#overlay-icon {
+  color: var(--white);
+  font-size: 1em;
 }
+
 .container_photo:hover {
   cursor: pointer;
 }
@@ -161,19 +182,20 @@ html {
   opacity: 1;
 }
 
-/* ---- end of project overlay ------- */
+/* ---- END OF PROJECT OVERLAY ------- */
 
 p {
-  font-family: "Quicksand", sans-serif;
-  color: #000;
+  font-family: 'Quicksand', sans-serif;
+  color: var(--black);
   line-height: 1.5;
   font-size: 20px;
 }
+
 h1 {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: bold;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #3d3d3d;
   margin: 15px;
 }
@@ -182,22 +204,22 @@ h2 {
   font-size: 3.75em;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 h4 {
   font-size: 1.875em;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .navbar-brand {
   font-size: 1.875em;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
-/* --------- hamburger menu icon ---------- */
+/* --------- HAMBURGER MENU ICON ---------- */
 
 .navbar-toggler {
   border: none;
@@ -210,7 +232,7 @@ h4 {
 }
 
 .navbar-toggler .icon-bar {
-  background-color: #fff;
+  background-color: var(--white);
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all 0.2s;
 }
@@ -256,63 +278,69 @@ h4 {
   transition: ease all 0.2s;
 }
 
-/* ----- end of hamburger menu icon ----- */
+/* ----- END OF HAMBURGER MENU ICON----- */
 
 .subheading {
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  color: #868e96;
+  color: var(--gray);
 }
 
 .nav-item {
   font-size: 20px;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 #quote {
   font-size: 28px;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 10;
-  width: "100%";
+  width: '100%';
 }
 
 #lastName {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  color: #8854d0;
+  font-family: 'Oswald', sans-serif;
+  color: var(--purple);
 }
 
 #contact-about {
   text-transform: uppercase;
   font-size: 30px;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
   line-height: 1.5;
-  color: #868e96;
+  color: var(--gray);
   margin: 10px;
 }
 
 #contact-icon {
-  color: black;
+  color: var(--black);
   padding: 5px;
 }
 
 #email {
-  color: #8854d0;
+  color: var(--purple);
   line-height: 1.5rem;
   text-decoration: none;
   margin-left: 20px;
   font-size: 30px;
 }
+.about-container {
+  padding: 20px;
+}
 
 #project-links {
-  margin-top: 5;
   padding: 10px;
   text-decoration: none;
-  color: black;
-  font-family: "Quicksand", "sans-serif";
+  color: var(--black);
+  font-family: 'Quicksand', 'sans-serif';
+}
+.card-screenshot {
+  width: 100%;
+  height: 100%;
 }
 
 #info {
@@ -324,31 +352,31 @@ h4 {
 }
 
 #date {
-  color: #8854d0;
+  color: var(--purple);
   min-width: none;
   font-size: 22px;
   min-width: 20rem;
   flex-shrink: 0;
   text-align: center;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-.social-icons {
+.social {
   width: 200px;
 }
 
-#icon {
+#social__icon {
   font-size: 30px;
   margin-right: 10px;
   background: #495057;
-  color: #ffffff;
+  color: var(--white);
   padding: 15px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-#icon:hover {
-  background-color: #8854d0;
+#social__icon:hover {
+  background-color: var(--purple);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -360,14 +388,14 @@ h4 {
 #skill-icon {
   font-size: 45px;
   margin-right: 20px;
-  background: #ffffff;
+  background: var(--white);
   color: #596275;
   padding: 5px;
   border-radius: 50%;
 }
 
 #skill-icon:hover {
-  color: #8854d0;
+  color: var(--purple);
   transform: scale(1.35);
 }
 
@@ -379,8 +407,9 @@ h4 {
 #checkmark {
   font-size: 15px;
   padding-right: 10px;
-  color: #8854d0;
+  color: var(--purple);
 }
+
 #more-projects {
   font-size: 1.5em;
 }
@@ -388,29 +417,32 @@ h4 {
 #guitar-img {
   width: 400px;
   height: 500px;
+  filter: drop-shadow(30px 10px 4px #888888);
 }
 
 #label {
-  font-family: "Quicksand";
-  color: #000;
+  font-family: 'Quicksand';
+  color: var(--black);
 }
+
 input {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
+
 textarea {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 #modal {
-  color: #00b894;
+  color: var(--green);
   font-size: 1em;
   margin-right: 10px;
 }
 
 #footer-icon {
-  font-size: "1.3em";
-  padding: "10px";
-  color: "#fff";
+  font-size: '1.3em';
+  padding: '10px';
+  color: '#fff';
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -421,19 +453,22 @@ textarea {
   #navbarNav {
     text-align: center;
   }
+
   .navbar {
     padding-bottom: 20px;
   }
+
   .nav-link {
     padding: 5px;
     font-size: 1em;
   }
 
-  /* ----- quote animation ------- */
+  /* ----- START OF QUOTE ANIMATION ------- */
   @keyframes moveInL {
     0% {
       transform: translate(-1000%, 0);
     }
+
     100% {
       transform: translate(-4%, 0);
     }
@@ -443,12 +478,14 @@ textarea {
     0% {
       transform: translate(1000%, 0);
     }
+
     100% {
       transform: translate(-3%, 0);
     }
   }
-  .left {
-    font-family: "Rubik";
+
+  .quote__left {
+    font-family: 'Rubik';
     font-size: 2em;
     font-weight: 700;
     animation-name: moveInL;
@@ -459,9 +496,8 @@ textarea {
     animation-delay: 0.5s;
   }
 
-  .right {
-    font-family: "Rubik";
-
+  .quote__right {
+    font-family: 'Rubik';
     font-size: 2em;
     font-weight: 600;
     padding-left: 5;
@@ -473,7 +509,7 @@ textarea {
     animation-delay: 0.5s;
   }
 
-  /* ---- end of quote animation ----- */
+  /* ---- END OF QUOTE ANIMATION ----- */
 
   #projects {
     padding: 3rem;
@@ -500,6 +536,7 @@ textarea {
     text-align: center;
     margin-bottom: 0;
   }
+
   #skill-list {
     text-align: left;
   }
@@ -519,13 +556,16 @@ textarea {
   #interests {
     text-align: center;
   }
+
   #guitar-img {
     max-width: 250px;
     height: 300px;
   }
+
   #contact-title {
     text-align: center;
   }
+
   #contact-info {
     text-align: center;
     justify-content: center;
@@ -537,6 +577,7 @@ textarea {
   .navbar {
     padding-bottom: 20px;
   }
+
   .nav-link {
     padding: 8px;
     font-size: 16px;
@@ -544,15 +585,13 @@ textarea {
 
   /* --- quote animation --- */
 
-  .quote-container {
-    margin-bottom: 10em;
-  }
   @keyframes moveInL {
     0% {
       transform: translate(-1000%, 0);
     }
+
     100% {
-      transform: translate(-4%, 0);
+      transform: translate(-5%, 0);
     }
   }
 
@@ -560,13 +599,14 @@ textarea {
     0% {
       transform: translate(1000%, 0);
     }
+
     100% {
       transform: translate(-3%, 0);
     }
   }
 
-  .left {
-    font-family: "Rubik";
+  .quote__left {
+    font-family: 'Rubik';
     font-size: 30px;
     font-weight: 700;
     animation-name: moveInL;
@@ -577,8 +617,8 @@ textarea {
     animation-delay: 0.5s;
   }
 
-  .right {
-    font-family: "Rubik";
+  .quote__right {
+    font-family: 'Rubik';
     font-size: 30px;
     font-weight: 700;
     padding-left: 5;
@@ -589,10 +629,11 @@ textarea {
     animation-fill-mode: both;
     animation-delay: 0.5s;
   }
+
   /* ---- end of quote animation --- */
 
   p {
-    text-align: "left";
+    text-align: 'left';
     font-size: 16px;
   }
 
@@ -609,6 +650,7 @@ textarea {
     font-size: 27px;
     margin-left: 0;
   }
+
   #info {
     font-size: 16px;
     text-align: left;
@@ -619,6 +661,7 @@ textarea {
   #firstName {
     font-size: 3em;
   }
+
   #lastName {
     font-size: 1em;
   }
@@ -634,9 +677,11 @@ textarea {
     margin: 0;
     padding: 0;
   }
+
   #softSkills {
     width: 100%;
   }
+
   #skill-list {
     line-height: 3em;
     display: inline-block;
@@ -657,10 +702,12 @@ textarea {
   #experience-info {
     line-height: 2em;
   }
+
   .experience-container {
     padding: 0;
     text-align: left !important;
   }
+
   #guitar-img {
     width: 500px;
     height: 300px;
@@ -674,9 +721,11 @@ textarea {
     min-width: 0;
     text-align: left;
   }
+
   #contact-title {
     text-align: center;
   }
+
   #contact-text {
     padding-left: 10px;
   }
@@ -693,12 +742,17 @@ textarea {
     font-size: 16px;
   }
 
-  /* ---- quote animation ------ */
-
+  /* ---- QUOTE ANIMATION  ------ */
+  .quote__container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+  }
   @keyframes moveInL {
     0% {
       transform: translate(-1000%, 0);
     }
+
     100% {
       transform: translate(-5%, 0);
     }
@@ -708,14 +762,16 @@ textarea {
     0% {
       transform: translate(1000%, 0);
     }
+
     100% {
-      transform: translate(-3%, 0);
+      transform: translate(-2%, 0);
     }
   }
-  .left {
-    font-family: "Rubik";
-    font-size: 1.2em;
-    /* padding-bottom: 5px; */
+
+  .quote__left {
+    font-family: 'Rubik';
+    font-size: 22px;
+    margin-bottom: 10px;
     font-weight: 700;
     animation-name: moveInL;
     animation-duration: 1.5s;
@@ -725,10 +781,9 @@ textarea {
     animation-delay: 0.5s;
   }
 
-  .right {
-    font-family: "Rubik";
-
-    font-size: 1.2em;
+  .quote__right {
+    font-family: 'Rubik';
+    font-size: 22px;
     font-weight: 600;
     padding-left: 5;
     animation-name: moveInR;
@@ -738,15 +793,17 @@ textarea {
     animation-fill-mode: both;
     animation-delay: 0.5s;
   }
-  /* ---- end of quotation animation ---- */
 
-  /* -- project overlay --- */
+  /* ---- END OF QUOTE ANIMATION  ---- */
+
+  /* -- PROJECT OVERLAY --- */
   .container_photo {
     max-width: 450px;
     height: 15em;
     margin: 10px;
   }
-  /* --- end of project overlay --- */
+
+  /* --- END OF PROJECT OVERLAY --- */
 
   h1 {
     font-size: 2.8em;
@@ -759,12 +816,13 @@ textarea {
   }
 
   p {
-    text-align: "left";
+    text-align: 'left';
     font-size: 16px;
-    max-width: "1000px";
+    max-width: '1000px';
   }
 
-  .quote-container {
+  .quote__container {
+    margin-bottom: 0;
     padding: 0px 5px 0px 5px;
     height: 100px;
     text-align: center;
@@ -776,18 +834,24 @@ textarea {
     text-align: center;
     /* padding-left: 3.75em; */
   }
+
   #email {
     font-size: 15px !important;
   }
-  .social-icons {
+
+  .social {
     font-size: 18px;
   }
+
   .dev-icons {
+    margin-bottom: 10em;
     margin-left: 20px;
   }
+
   #softSkills {
     text-align: center;
   }
+
   #skill-list {
     text-align: left;
   }
@@ -811,11 +875,13 @@ textarea {
   .experience-container {
     margin-top: 2em;
   }
+
   .education-container {
     max-width: 1000px;
     margin-top: 2em;
     text-align: left;
   }
+
   #education-info {
     max-width: 1000px;
   }
@@ -824,9 +890,11 @@ textarea {
   .education-header {
     text-align: center !important;
   }
+
   #projects {
     margin-bottom: 0;
   }
+
   #project-title {
     padding: 0;
   }
@@ -834,6 +902,7 @@ textarea {
   #project-links {
     font-size: 1em;
   }
+
   #experience {
     margin-bottom: 0;
   }
@@ -844,13 +913,16 @@ textarea {
     min-width: 0;
     margin-left: 0;
   }
+
   #guitar-img {
     max-width: 200px;
     height: 300px;
   }
+
   .subheading {
     font-size: 22px;
   }
+
   #contact-text {
     text-align: left;
   }
@@ -861,7 +933,7 @@ textarea {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   word-wrap: break-word;
 }
