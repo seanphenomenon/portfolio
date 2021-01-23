@@ -46,7 +46,7 @@ export default function Projects() {
                   </h4>
                 </article>
                 <img
-                  src='https://i.imgur.com/sRulkms.jpg'
+                  src='https://imgur.com/jG3J7AA.jpg'
                   alt='movie screenshot'
                   class='card-screenshot'
                 />
