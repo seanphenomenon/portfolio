@@ -6,7 +6,7 @@ export default function Projects() {
     <div>
       <section className=' align-items-center mb-5' id='projects'>
         <h2
-          className='mb-5 mt-3 p-5 text-lg-left text-sm-center '
+          className='mb-5 mt-3  text-lg-left text-sm-center '
           id='project-title'
         >
           Projects
@@ -15,7 +15,7 @@ export default function Projects() {
           <div className='row justify-content-center '>
             {/* ---- Movie Finder App  ---- */}
             <Fade>
-              <div className='col-md  container_photo'>
+              <div className='col-lg col-md container_photo'>
                 <div className='popup-overlay text-center'>
                   <span>
                     <a
@@ -39,8 +39,8 @@ export default function Projects() {
                   </span>
                 </div>
                 <article className='card-title text-left'>
-                  <h2 style={{ textAlign: 'left' }}>Movie Finder App</h2>
-                  <h4 style={{ maxWidth: '200px', maxHeight: '35px' }}>
+                  <h2>Movie Finder App</h2>
+                  <h4>
                     A simple movie finder application built with Javascript,
                     React, Redux, and the OMDb API
                   </h4>
@@ -53,7 +53,7 @@ export default function Projects() {
               </div>
 
               {/* ---- Mortgage Calculator ----- */}
-              <div className=' col-md  container_photo'>
+              <div className=' col-lg col-md  container_photo'>
                 <div className='popup-overlay text-center'>
                   <span>
                     <a
@@ -77,8 +77,8 @@ export default function Projects() {
                   </span>
                 </div>
                 <article className='card-title text-left'>
-                  <h2 style={{ textAlign: 'left' }}>Mortgage App</h2>
-                  <h4 style={{ maxWidth: '200px', maxHeight: '35px' }}>
+                  <h2>Mortgage App</h2>
+                  <h4>
                     A simple monthly mortage calculator app built with
                     Javascript, React & Bootstrap.
                   </h4>
@@ -89,10 +89,13 @@ export default function Projects() {
                   class='card-screenshot'
                 />
               </div>
+            </Fade>
+          </div>
 
-              {/* ---- Joke Generator ----- */}
-
-              <div className='col-md  container_photo'>
+          <div className='row justify-content-center '>
+            {/* ---- Joke Generator ----- */}
+            <Fade>
+              <div className='col-lg col-md  container_photo'>
                 <div className='popup-overlay text-center'>
                   <span>
                     <a
@@ -116,8 +119,8 @@ export default function Projects() {
                   </span>
                 </div>
                 <article className='card-title text-left'>
-                  <h2 style={{ textAlign: 'left' }}>Joke Generator App</h2>
-                  <h4 style={{ maxWidth: '200px', maxHeight: '35px' }}>
+                  <h2>Joke Generator App</h2>
+                  <h4>
                     A simple joke generator built with Javascript, React,
                     Bootstrap, and RapidJoke & Giphy API's
                   </h4>
@@ -131,7 +134,7 @@ export default function Projects() {
 
               {/* --- Interior Landing Page --- */}
 
-              <div className='col-md  container_photo'>
+              <div className='col-lg col-md  container_photo'>
                 <div className='popup-overlay text-center'>
                   <span>
                     <a
@@ -155,10 +158,10 @@ export default function Projects() {
                   </span>
                 </div>
                 <article className='card-title text-left'>
-                  <h2 style={{ textAlign: 'left' }}>Interior Page</h2>
-                  <h4 style={{ maxWidth: '200px', maxHeight: '35px' }}>
-                    A simple responsive landing design built with HTML, CSS, and
-                    Javascript.
+                  <h2>Interior Page</h2>
+                  <h4>
+                    A simple responsive landing design built with pure HTML,
+                    CSS, and Javascript.
                   </h4>
                 </article>
                 <img
@@ -176,14 +179,13 @@ export default function Projects() {
           >
             <Fade top>
               <p className=' subheading d-flex ' id='more-projects'>
-                For more projects, please visit my{' '}
+                For more projects, please visit my
                 <a
                   href='http://www.github.com/seanphenomenon'
                   target='_blank'
                   rel='noopener noreferrer'
                   id='github-projects'
                 >
-                  {' '}
                   Github
                 </a>
                 .

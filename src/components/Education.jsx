@@ -1,32 +1,32 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 export default function Education() {
   return (
     <div>
-      <section className="p-5" id="education">
-        <div className="w-100">
-          <h2 className=" education-header p-2 mb-5 mt-3 text-lg-left text-sm-center">
+      <section className='p-5' id='education'>
+        <div className='w-100'>
+          <h2 className=' education-header p-2 mb-5 mt-3 text-lg-left text-sm-center'>
             Education
           </h2>
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
-            <div className="p-2">
+          <div className='resume-item d-flex flex-column flex-md-row justify-content-start mb-5'>
+            <div className='p-2'>
               <h4>San Diego Code School</h4>
               <Fade>
                 {/* hidden date below on md and up*/}
-                <div className=" date text-md-right d-md-none " id="date">
+                <div className=' date text-md-right d-md-none ' id='date'>
                   <span>November 2019 - May 2020</span>
                 </div>
-                <div className="mb-3 subheading">
+                <div className='mb-3 subheading'>
                   Full-Stack Web Development Program
                 </div>
-                <p id="education-info" style={{ maxWidth: "800px" }}>
+                <p id='education-info'>
                   Learned full-stack JavaScript development best practices with
                   HTML/CSS, React.js, Express, Node.js, MongoDB, and MySQL.
                   <br />
                   <br />
-                  Participated in group projects where mob programming and/or
-                  pair programming were utilized.
+                  Participated in group projects where mob programming and pair
+                  programming were utilized.
                   <br />
                   <br />
                   Implemented Git for version control in both group and
@@ -40,26 +40,26 @@ export default function Education() {
             </div>
             <Fade>
               <div
-                className=" date text-md-right ml-3 d-none d-md-block"
-                id="date"
+                className=' date text-md-right ml-3 d-none d-md-block'
+                id='date'
               >
                 <span>November 2019 - May 2020</span>
               </div>
             </Fade>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-start mb-5">
-            <div className="p-2">
+          <div className='resume-item d-flex flex-column flex-md-row justify-content-start mb-5'>
+            <div className='p-2'>
               <h4>San Diego State University</h4>
               <Fade>
                 {/* hidden date below on md and up*/}
-                <div className=" date text-md-right d-md-none " id="date">
+                <div className=' date text-md-right d-md-none ' id='date'>
                   <span>September 2012 - December 2015</span>
                 </div>
-                <div className="mb-3 subheading">
-                  Bachelor's Degree - Business (Marketing){" "}
+                <div className='mb-3 subheading'>
+                  Bachelor's Degree - Business (Marketing){' '}
                 </div>
-                <p id="education-info" style={{ maxWidth: "800px" }}>
+                <p id='education-info' style={{ maxWidth: '800px' }}>
                   Obtained skills and knowledge centered on general business
                   practices and logistics, and integrated marketing
                   communications.
@@ -75,8 +75,8 @@ export default function Education() {
             </div>
             <Fade>
               <div
-                className=" date text-md-right ml-4 d-none d-md-block"
-                id="date"
+                className=' date text-md-right ml-4 d-none d-md-block'
+                id='date'
               >
                 <span>September 2012 - December 2015</span>
               </div>

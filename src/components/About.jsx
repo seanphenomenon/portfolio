@@ -26,7 +26,7 @@ export default function About() {
                 <a href='mailto:name@email.com' id='email'>
                   <span role='img' aria-label='mailbox' id='contact-icon'>
                     <i className='far fa-envelope'></i>
-                  </span>{' '}
+                  </span>
                   seanvharrell@gmail.com
                 </a>
               </div>
@@ -40,11 +40,11 @@ export default function About() {
           <div className='about-container'>
             <Fade>
               <p className='mb-4'>
-                Hello, my name is Sean Harrell and I'm a San Diego-based Jr.
-                Software Engineer who is not afraid to handle problems head on.
-                While my path to web development is filled with plenty of twists
-                and turns, my experiences have shaped me into what I believe is
-                an asset within a work setting.
+                Hello, my name is Sean Harrell and I'm a San Diego-based web
+                developer who is not afraid to handle problems head on. While my
+                path to web development is filled with plenty of twists and
+                turns, my experiences have shaped me into what I believe is an
+                asset within a work setting.
               </p>
             </Fade>
             <Fade>

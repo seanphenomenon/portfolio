@@ -11,7 +11,7 @@ export default function Skills() {
           <div className=' d-flex flex-column flex-md-row justify-content-center'>
             <div className='p-2'>
               <Fade top>
-                <div className='mb-3 subheading'>
+                <div className='mb-4 subheading'>
                   Programming Languages & Tools
                 </div>
               </Fade>
@@ -35,7 +35,7 @@ export default function Skills() {
                   <div className='col-md-6 mb-5 text-md-left' id='softSkills'>
                     <h4>Soft Skills</h4>
                     <hr />
-                    <Fade bottom>
+                    <Fade left>
                       <p id='skill-list'>
                         <i className='fas fa-check' id='checkmark'></i>
                         Creative Thinker
@@ -57,7 +57,7 @@ export default function Skills() {
                   <div className='col-md-6 text-md-left' id='toolSkills'>
                     <h4>Additional Tools</h4>
                     <hr />
-                    <Fade bottom>
+                    <Fade right>
                       <p id='skill-list'>
                         <i className='fas fa-check' id='checkmark'></i>
                         MongoDB
