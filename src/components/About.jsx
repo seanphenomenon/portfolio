@@ -77,7 +77,7 @@ export default function About() {
                   <i className='fab fa-github' id='social__icon'></i>
                 </a>
                 <a
-                  href='https://drive.google.com/file/d/1X-LBz4uG26M2IRiNVoNToDHMrFref0h6/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1u1zfx6EgybBZ3MqYoTMHywPQbz6P13zx/view?usp=sharing'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
